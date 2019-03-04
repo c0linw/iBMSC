@@ -3,6 +3,16 @@
 µBMSC is a modified version of iBMSC to add features and clean up the iBMSC code, fix bugs and so on.
 See README.md.old for original iBMSC README file.
 
+**BMSdori**
+=====
+* TODO:
+  * Render notes using actual game sprites based on known labels from BanG Dream! Girls Band Party!
+  * Render lines between slide notes for easier visualization
+  * Create blank file with WAV labels preset for Bandori charts
+  * Keyboard shortcuts to change between Bandori note types
+  
+* I don't even know how to use the BMS previewers myself, so I'll figure that out later. Would be cool to create a custom previewer using Burrito's code for bandorichart.
+
 Changes
 =====
 * Out of the box OGG previews
