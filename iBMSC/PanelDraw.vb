@@ -1,4 +1,5 @@
-﻿Imports iBMSC.Editor
+﻿Imports System.Drawing.Drawing2D
+Imports iBMSC.Editor
 
 Partial Public Class MainWindow
 
@@ -599,6 +600,13 @@ Partial Public Class MainWindow
 
     End Sub
 
+    Private Sub DrawSlider()
+        ' TODO: Add case for "slide" labels and draw lines connecting slider notes
+        '   -Check if slide note is followed by another slide note or slider end
+        '       - If so, draw lines from slide note's upper corners to next slide note/slide end's lower corners
+        '       - Otherwise, color note Color.Red to warn the user that slide is incomplete
+    End Sub
+
     Private Sub DrawPairedLNBody(sNote As Note, e As BufferedGraphics, xHS As Long, xVS As Long, xHeight As Integer, xAlpha As Single)
         Dim xPen2 As New Pen(GetColumn(sNote.ColumnIndex).getLongBright(xAlpha))
         Dim xBrush3 As New Drawing2D.LinearGradientBrush(
@@ -616,6 +624,7 @@ Partial Public Class MainWindow
 
     ''' <summary>
     ''' Draw a note in a buffer under NT mode.
+    ''' BANDORI NOTE LABELS WILL OVERRIDE COLOUR SETTINGS 
     ''' </summary>
     ''' <param name="sNote">Note to be drawn.</param>
     ''' <param name="e">Buffer.</param>
@@ -639,6 +648,20 @@ Partial Public Class MainWindow
         Dim p2 As Point
         Dim bright As Color
         Dim dark As Color
+        Dim blue, green, darkgreen, yellow, pink As Color
+
+        blue = Color.LightBlue
+        green = Color.Lime
+        darkgreen = Color.ForestGreen
+        yellow = Color.Yellow
+        pink = Color.Magenta
+
+        ' TODO: Split into cases for known Bandori note types, and a default case (bd).
+        '   - Slide node (need to implement DrawSlider)
+        '   - Slide end (calls helper with green colour)
+        '   - Flick/Slide end flick (calls helper with pink colour)
+        '   - Skill (calls helper with yellow colour)
+        '   - bd/default (calls helper with blue colour)
 
         If sNote.Length = 0 Then
             p1 = New Point(HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex), xHS),
@@ -668,20 +691,93 @@ Partial Public Class MainWindow
             xBrush2 = New SolidBrush(GetColumn(sNote.ColumnIndex).cLText)
         End If
 
+        ' Draw sliderbodies between slide note and next slide note
+        If xLabel = "slide_a" OrElse xLabel = "slide_b" Then
+            ' check whether slide end exists after it
+            If getNextSlide(sNote) = -1 Then
+                bright = Color.Red
+                dark = Color.Red
+                renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
+            Else
+                bright = Color.FromArgb(AdjustBrightness(getNoteColor(xLabel), 50, 220).ToArgb)
+                dark = Color.FromArgb(AdjustBrightness(getNoteColor(xLabel), -25, 220).ToArgb)
+                renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
+                ' Get next slide note
+                nextSlide = Notes(getNextSlide(sNote))
+                renderSlider(sNote, nextSlide, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
+                ' Check for previous slide
+                ' If previous slide is present and is offscreen, render it anyway
+            End If
+            ' Check previous slide note and draw if offscreen
+        Else ' TODO: draw long notes as start/end notes of Color.Lime and a slider body of Color.ForestGreen
+            bright = Color.FromArgb(AdjustBrightness(getNoteColor(xLabel), 50, 220).ToArgb)
+            dark = Color.FromArgb(AdjustBrightness(getNoteColor(xLabel), -25, 220).ToArgb)
+            renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
+        End If
+
+        ' Offscreen slider fix
+        If xLabel = "slide_a" OrElse xLabel = "slide_b" OrElse xLabel = "slide_end_flick_a" OrElse xLabel = "slide_end_flick_b" OrElse xLabel = "slide_end_a" OrElse xLabel = "slide_end_a" Then
+            ' decrementing loop starting from note ID to get previous slide_a or slide_b note
+            ' Exit if no note or slide end note is found first
+            ' If previous slide note is found, check if offscreen
+            ' It is? Great, render it's body.
+            ' Use line slope and (distance to screen bottom / distance between notes) to calculate x positions to start from bottom of the screen
+            ' draw sliderbody lines between given points.
+        End If
+
+        'e.Graphics.DrawString(sNote.TimeOffset.ToString("0.##"), New Font("Verdana", 9), Brushes.Cyan, _
+        '                      New Point(HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex + 1), xHS), VerticalPositiontoDisplay(sNote.VPosition, xVS, xHeight) - vo.kHeight - 2))
+
+    End Sub
+    Private Function getNextSlide(sNote)
+        ' @Returns: Integer corresponding to note ID in Notes() array
+        ' TODO: Figure out what I'm going to do with offscreen sliders (upper screen is fine already, but off-bottom screen sliders need fixing
+        '   - Desired result: first slider off bottom will draw body anyway
+
+        ' Copy-pasted shit from drawNotes. Repurpose to find next slider note then return its ID
+        For xI1 = 0 To UBound(Notes)
+            If Notes(xI1).VPosition > xUpperBorder Then Exit For
+            If Not IsNoteVisible(xI1, xTHeight, xVS) Then Continue For
+            If NTInput Then
+                DrawNoteNT(Notes(xI1), e1, xHS, xVS, xTHeight)
+            Else
+                DrawNote(Notes(xI1), e1, xHS, xVS, xTHeight)
+            End If
+        Next
+        ' Return -1 if next slider note was not found
+    End Function
+
+    Private Function getNoteColor(ByVal xLabel As String)
+        Select Case xLabel
+            Case "flick", "fever_note_flick", "slide_end_flick_a", "slide_end_flick_b"
+                Return Color.Magenta
+            Case "skill"
+                Return Color.Yellow
+            Case "slide_a", "slide_b", "slide_end_a", "slide_end_b"
+                Return Color.Lime
+            Case Else
+                Return Color.LightBlue
+        End Select
+    End Function
+
+    Private Sub renderNote(sNote As Note, xLabel As String, xHS As Long, xVS As Long, xHeight As Integer, xAlpha As Single, bright As Color, p1 As Point, p2 As Point, dark As Color, e As BufferedGraphics, xBrush2 As SolidBrush)
+        Dim xBrush As LinearGradientBrush
+        Dim xPen1 As Pen
+
         xPen1 = New Pen(bright)
         xBrush = New Drawing2D.LinearGradientBrush(p1, p2, bright, dark)
 
         ' Note gradient
         e.Graphics.FillRectangle(xBrush,
-                                     HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex), xHS) + 1,
-                                     NoteRowToPanelHeight(sNote.VPosition + sNote.Length, xVS, xHeight) - vo.kHeight + 1,
-                                     GetColumnWidth(sNote.ColumnIndex) * gxWidth - 1,
-                                     CInt(sNote.Length * gxHeight) + vo.kHeight - 1)
+                                 HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex), xHS) + 1,
+                                 NoteRowToPanelHeight(sNote.VPosition + sNote.Length, xVS, xHeight) - vo.kHeight + 1,
+                                 GetColumnWidth(sNote.ColumnIndex) * gxWidth - 1,
+                                 CInt(sNote.Length * gxHeight) + vo.kHeight - 1)
 
         ' Outline
         e.Graphics.DrawRectangle(xPen1, HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex), xHS) + 1,
-                                     NoteRowToPanelHeight(sNote.VPosition + sNote.Length, xVS, xHeight) - vo.kHeight,
-                                            GetColumnWidth(sNote.ColumnIndex) * gxWidth - 3, CInt(sNote.Length * gxHeight) + vo.kHeight)
+                                 NoteRowToPanelHeight(sNote.VPosition + sNote.Length, xVS, xHeight) - vo.kHeight,
+                                 GetColumnWidth(sNote.ColumnIndex) * gxWidth - 3, CInt(sNote.Length * gxHeight) + vo.kHeight)
 
         ' Note B36
         e.Graphics.DrawString(IIf(IsColumnNumeric(sNote.ColumnIndex), sNote.Value / 10000, xLabel),
@@ -700,10 +796,10 @@ Partial Public Class MainWindow
         ' Select Box
         If sNote.Selected Then
             e.Graphics.DrawRectangle(vo.kSelected,
-                                    HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex), xHS),
-                                    NoteRowToPanelHeight(sNote.VPosition + sNote.Length, xVS, xHeight) - vo.kHeight - 1,
-                                    GetColumnWidth(sNote.ColumnIndex) * gxWidth,
-                                    CInt(sNote.Length * gxHeight) + vo.kHeight + 2)
+                                     HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex), xHS),
+                                     NoteRowToPanelHeight(sNote.VPosition + sNote.Length, xVS, xHeight) - vo.kHeight - 1,
+                                     GetColumnWidth(sNote.ColumnIndex) * gxWidth,
+                                     CInt(sNote.Length * gxHeight) + vo.kHeight + 2)
         End If
 
         ' Errors
@@ -713,9 +809,5 @@ Partial Public Class MainWindow
                                  CInt(NoteRowToPanelHeight(sNote.VPosition, xVS, xHeight) - vo.kHeight / 2 - 12),
                                  24, 24)
         End If
-
-        'e.Graphics.DrawString(sNote.TimeOffset.ToString("0.##"), New Font("Verdana", 9), Brushes.Cyan, _
-        '                      New Point(HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex + 1), xHS), VerticalPositiontoDisplay(sNote.VPosition, xVS, xHeight) - vo.kHeight - 2))
-
     End Sub
 End Class
