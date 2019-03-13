@@ -600,7 +600,7 @@ Partial Public Class MainWindow
 
     End Sub
 
-    Private Sub DrawSlider()
+    Private Sub DrawSlider(ByVal sNote As Note, ByVal nextSlide As Note, ByVal e As BufferedGraphics, ByVal xHS As Long, ByVal xVS As Long, ByVal xHeight As Integer)
         ' TODO: Add case for "slide" labels and draw lines connecting slider notes
         '   -Check if slide note is followed by another slide note or slider end
         '       - If so, draw lines from slide note's upper corners to next slide note/slide end's lower corners
@@ -694,24 +694,23 @@ Partial Public Class MainWindow
         ' Draw sliderbodies between slide note and next slide note
         If xLabel = "slide_a" OrElse xLabel = "slide_b" Then
             ' check whether slide end exists after it
-            If getNextSlide(sNote) = -1 Then
+            If getNextSlide(sNote, xLabel) = -1 Then
                 bright = Color.Red
                 dark = Color.Red
                 renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
             Else
-                bright = Color.FromArgb(AdjustBrightness(getNoteColor(xLabel), 50, 220).ToArgb)
-                dark = Color.FromArgb(AdjustBrightness(getNoteColor(xLabel), -25, 220).ToArgb)
+                bright = getCustomColor(getNoteColor(xLabel), xAlpha)
+                dark = getCustomColor(getNoteColor(xLabel), xAlpha)
                 renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
                 ' Get next slide note
-                nextSlide = Notes(getNextSlide(sNote))
-                renderSlider(sNote, nextSlide, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
-                ' Check for previous slide
-                ' If previous slide is present and is offscreen, render it anyway
+                Dim nextSlide As Note
+                nextSlide = Notes(getNextSlide(sNote, xLabel))
+                DrawSlider(sNote, nextSlide, e, xHS, xVS, xHeight)
             End If
             ' Check previous slide note and draw if offscreen
         Else ' TODO: draw long notes as start/end notes of Color.Lime and a slider body of Color.ForestGreen
-            bright = Color.FromArgb(AdjustBrightness(getNoteColor(xLabel), 50, 220).ToArgb)
-            dark = Color.FromArgb(AdjustBrightness(getNoteColor(xLabel), -25, 220).ToArgb)
+            bright = getCustomColor(getNoteColor(xLabel), xAlpha)
+            dark = getCustomColor(getNoteColor(xLabel), xAlpha)
             renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
         End If
 
@@ -729,22 +728,42 @@ Partial Public Class MainWindow
         '                      New Point(HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex + 1), xHS), VerticalPositiontoDisplay(sNote.VPosition, xVS, xHeight) - vo.kHeight - 2))
 
     End Sub
-    Private Function getNextSlide(sNote)
-        ' @Returns: Integer corresponding to note ID in Notes() array
-        ' TODO: Figure out what I'm going to do with offscreen sliders (upper screen is fine already, but off-bottom screen sliders need fixing
-        '   - Desired result: first slider off bottom will draw body anyway
+    
+    Public Function getCustomColor(ByVal noteColor As Color, ByVal opacity As Single) As Color
+        Dim colorInt As Integer
+        colorInt = AdjustBrightness(noteColor, 50, ((noteColor.ToArgb() >> 24) And &HFF) / 255).ToArgb
+        Return Color.FromArgb((CInt(((colorInt >> 24) And &HFF) * opacity) << 24) Or (colorInt And &HFFFFFF))
+    End Function
 
-        ' Copy-pasted shit from drawNotes. Repurpose to find next slider note then return its ID
-        For xI1 = 0 To UBound(Notes)
-            If Notes(xI1).VPosition > xUpperBorder Then Exit For
-            If Not IsNoteVisible(xI1, xTHeight, xVS) Then Continue For
-            If NTInput Then
-                DrawNoteNT(Notes(xI1), e1, xHS, xVS, xTHeight)
-            Else
-                DrawNote(Notes(xI1), e1, xHS, xVS, xTHeight)
-            End If
-        Next
+    ' @Returns: Integer corresponding to note ID in Notes() array
+
+    ' Start from current note in Notes array
+    ' Check if index + 1 note exists, then check label of that note
+    ' if slide, return note index
+    ' if not, keep looping
+    ' if next lowest note doesn't exist, return -1
+    Private Function getNextSlide(ByVal sNote As Note, ByVal slideType As String)
+
+        Dim currIndex As Integer
+        Dim currLabel As String
+
+        If slideType = "slide_a" Then
+            For currIndex = Array.IndexOf(Notes, sNote) To UBound(Notes)
+                currLabel = C10to36(Notes(currIndex).Value \ 10000)
+                If currLabel = "slide_a" OrElse currLabel = "slide_end_a" OrElse currLabel = "slide_end_flick_a" Then
+                    Return currIndex
+                End If
+            Next
+        ElseIf slideType = "slide_b" Then
+            For currIndex = Array.IndexOf(Notes, sNote) To UBound(Notes)
+                currLabel = C10to36(Notes(currIndex).Value \ 10000)
+                If currLabel = "slide_b" OrElse currLabel = "slide_end_b" OrElse currLabel = "slide_end_flick_b" Then
+                    Return currIndex
+                End If
+            Next
+        End If
         ' Return -1 if next slider note was not found
+        Return -1
     End Function
 
     Private Function getNoteColor(ByVal xLabel As String)
