@@ -6,8 +6,15 @@ See README.md.old for original iBMSC README file.
 **BMSdori**
 =====
 * TODO:
-  * Render notes using actual game sprites based on known labels from BanG Dream! Girls Band Party!
+  * Set note color based on known Bandori note labels
+      * PROGRESS: 
+          * Added code to change color of notes. Works for regular notes, flicks, sliderends, and skill notes
+          * Wanted to mark "dangling" slider notes red. Not working properly right now as all slide notes are being colored red.
   * Render lines between slide notes for easier visualization
+      * PROGRESS:
+          * Logic behind it looks good, but I need to learn how to draw stuff that isn't a rectangle lol
+          * Still need to figure out how to split a single note LN into head, body, and tail
+          * Coloring skill activation LNs is gonna be kinda fucky but I think I can make it work.
   * Create blank file with WAV labels preset for Bandori charts
   * Keyboard shortcuts to change between Bandori note types
   
