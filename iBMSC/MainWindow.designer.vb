@@ -25,16 +25,16 @@ Partial Class MainWindow
         Me.TBLangDef = New System.Windows.Forms.ToolStripMenuItem()
         Me.TBLangRefresh = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator9 = New System.Windows.Forms.ToolStripSeparator()
-        Me.TBLanguage = New System.Windows.Forms.ToolStripDropDownButton()
         Me.mnLanguage = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TBLanguage = New System.Windows.Forms.ToolStripDropDownButton()
         Me.cmnTheme = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.TBThemeDef = New System.Windows.Forms.ToolStripMenuItem()
         Me.TBThemeSave = New System.Windows.Forms.ToolStripMenuItem()
         Me.TBThemeRefresh = New System.Windows.Forms.ToolStripMenuItem()
         Me.TBThemeLoadComptability = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
-        Me.TBTheme = New System.Windows.Forms.ToolStripDropDownButton()
         Me.mnTheme = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TBTheme = New System.Windows.Forms.ToolStripDropDownButton()
         Me.POptionsScroll = New System.Windows.Forms.Panel()
         Me.POptions = New System.Windows.Forms.Panel()
         Me.POExpansion = New System.Windows.Forms.Panel()
@@ -245,7 +245,6 @@ Partial Class MainWindow
         Me.mnNTInput = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnErrorCheck = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnPreviewOnClick = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnShowFileName = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator20 = New System.Windows.Forms.ToolStripSeparator()
         Me.mnGOptions = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnVOptions = New System.Windows.Forms.ToolStripMenuItem()
@@ -262,11 +261,11 @@ Partial Class MainWindow
         Me.ToolStripSeparator11 = New System.Windows.Forms.ToolStripSeparator()
         Me.POBModify = New System.Windows.Forms.ToolStripMenuItem()
         Me.POBMirror = New System.Windows.Forms.ToolStripMenuItem()
+        Me.POConvert = New System.Windows.Forms.ToolStripDropDownButton()
         Me.mnPreview = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnPlayB = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnPlay = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnStop = New System.Windows.Forms.ToolStripMenuItem()
-        Me.POConvert = New System.Windows.Forms.ToolStripDropDownButton()
         Me.TBMain = New System.Windows.Forms.ToolStrip()
         Me.TBNew = New System.Windows.Forms.ToolStripButton()
         Me.TBOpen = New System.Windows.Forms.ToolStripSplitButton()
@@ -356,91 +355,91 @@ Partial Class MainWindow
         Me.HSL = New System.Windows.Forms.HScrollBar()
         Me.POptionsResizer = New System.Windows.Forms.Button()
         Me.ToolTipUniversal = New System.Windows.Forms.ToolTip(Me.components)
-        Me.cmnLanguage.SuspendLayout()
-        Me.cmnTheme.SuspendLayout()
-        Me.POptionsScroll.SuspendLayout()
-        Me.POptions.SuspendLayout()
-        Me.POExpansion.SuspendLayout()
-        Me.POExpansionInner.SuspendLayout()
-        Me.POBeat.SuspendLayout()
-        Me.POBeatInner.SuspendLayout()
-        Me.TableLayoutPanel7.SuspendLayout()
-        CType(Me.nBeatD, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.nBeatN, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.POBeatPart2.SuspendLayout()
-        Me.POWAV.SuspendLayout()
-        Me.POWAVInner.SuspendLayout()
-        Me.FlowLayoutPanel3.SuspendLayout()
-        Me.POWAVPart2.SuspendLayout()
-        Me.POWaveForm.SuspendLayout()
-        Me.POWaveFormInner.SuspendLayout()
-        Me.POWaveFormPart2.SuspendLayout()
-        CType(Me.TWSaturation, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TWTransparency, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TWPrecision, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TWWidth, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TWLeft, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TWSaturation2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TWLeft2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TWTransparency2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TWWidth2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TWPrecision2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.POWaveFormPart1.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
-        Me.FlowLayoutPanel1.SuspendLayout()
-        Me.TableLayoutPanel6.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TWPosition2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TWPosition, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.POGrid.SuspendLayout()
-        Me.POGridInner.SuspendLayout()
-        Me.POGridPart2.SuspendLayout()
-        Me.TableLayoutPanel5.SuspendLayout()
-        Me.FlowLayoutPanel2.SuspendLayout()
-        Me.TableLayoutPanel4.SuspendLayout()
-        CType(Me.CGB, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.POGridPart1.SuspendLayout()
-        Me.TableLayoutPanel3.SuspendLayout()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CGHeight2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CGHeight, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CGWidth2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CGWidth, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TableLayoutPanel2.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CGDivide, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CGSub, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.POHeader.SuspendLayout()
-        Me.POHeaderInner.SuspendLayout()
-        Me.POHeaderPart2.SuspendLayout()
-        Me.POHeaderPart1.SuspendLayout()
-        CType(Me.THBPM, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Menu1.SuspendLayout()
-        Me.mnMain.SuspendLayout()
-        Me.cmnConversion.SuspendLayout()
-        Me.TBMain.SuspendLayout()
-        Me.pStatus.SuspendLayout()
-        Me.FStatus2.SuspendLayout()
-        Me.FStatus.SuspendLayout()
-        Me.ToolStripContainer1.ContentPanel.SuspendLayout()
-        Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout()
-        Me.ToolStripContainer1.SuspendLayout()
-        Me.PMain.SuspendLayout()
-        Me.PMainR.SuspendLayout()
-        Me.PMainL.SuspendLayout()
-        Me.SuspendLayout()
+        Me.cmnLanguage.SuspendLayout
+        Me.cmnTheme.SuspendLayout
+        Me.POptionsScroll.SuspendLayout
+        Me.POptions.SuspendLayout
+        Me.POExpansion.SuspendLayout
+        Me.POExpansionInner.SuspendLayout
+        Me.POBeat.SuspendLayout
+        Me.POBeatInner.SuspendLayout
+        Me.TableLayoutPanel7.SuspendLayout
+        CType(Me.nBeatD,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.nBeatN,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.POBeatPart2.SuspendLayout
+        Me.POWAV.SuspendLayout
+        Me.POWAVInner.SuspendLayout
+        Me.FlowLayoutPanel3.SuspendLayout
+        Me.POWAVPart2.SuspendLayout
+        Me.POWaveForm.SuspendLayout
+        Me.POWaveFormInner.SuspendLayout
+        Me.POWaveFormPart2.SuspendLayout
+        CType(Me.TWSaturation,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TWTransparency,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TWPrecision,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TWWidth,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TWLeft,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TWSaturation2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TWLeft2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TWTransparency2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TWWidth2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TWPrecision2,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.POWaveFormPart1.SuspendLayout
+        Me.TableLayoutPanel1.SuspendLayout
+        Me.FlowLayoutPanel1.SuspendLayout
+        Me.TableLayoutPanel6.SuspendLayout
+        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TWPosition2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TWPosition,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.POGrid.SuspendLayout
+        Me.POGridInner.SuspendLayout
+        Me.POGridPart2.SuspendLayout
+        Me.TableLayoutPanel5.SuspendLayout
+        Me.FlowLayoutPanel2.SuspendLayout
+        Me.TableLayoutPanel4.SuspendLayout
+        CType(Me.CGB,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.POGridPart1.SuspendLayout
+        Me.TableLayoutPanel3.SuspendLayout
+        CType(Me.PictureBox9,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.CGHeight2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.CGHeight,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox10,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.CGWidth2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.CGWidth,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.TableLayoutPanel2.SuspendLayout
+        CType(Me.PictureBox7,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.CGDivide,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.CGSub,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.POHeader.SuspendLayout
+        Me.POHeaderInner.SuspendLayout
+        Me.POHeaderPart2.SuspendLayout
+        Me.POHeaderPart1.SuspendLayout
+        CType(Me.THBPM,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Menu1.SuspendLayout
+        Me.mnMain.SuspendLayout
+        Me.cmnConversion.SuspendLayout
+        Me.TBMain.SuspendLayout
+        Me.pStatus.SuspendLayout
+        Me.FStatus2.SuspendLayout
+        Me.FStatus.SuspendLayout
+        Me.ToolStripContainer1.ContentPanel.SuspendLayout
+        Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout
+        Me.ToolStripContainer1.SuspendLayout
+        Me.PMain.SuspendLayout
+        Me.PMainR.SuspendLayout
+        Me.PMainL.SuspendLayout
+        Me.SuspendLayout
         '
         'cmnLanguage
         '
         Me.cmnLanguage.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TBLangDef, Me.TBLangRefresh, Me.ToolStripSeparator9})
         Me.cmnLanguage.Name = "cmnLanguage"
-        Me.cmnLanguage.OwnerItem = Me.mnLanguage
+        Me.cmnLanguage.OwnerItem = Me.TBLanguage
         Me.cmnLanguage.Size = New System.Drawing.Size(121, 54)
         '
         'TBLangDef
@@ -461,6 +460,14 @@ Partial Class MainWindow
         Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
         Me.ToolStripSeparator9.Size = New System.Drawing.Size(117, 6)
         '
+        'mnLanguage
+        '
+        Me.mnLanguage.DropDown = Me.cmnLanguage
+        Me.mnLanguage.Image = Global.iBMSC.My.Resources.Resources.x16Language
+        Me.mnLanguage.Name = "mnLanguage"
+        Me.mnLanguage.Size = New System.Drawing.Size(229, 22)
+        Me.mnLanguage.Text = "&Language"
+        '
         'TBLanguage
         '
         Me.TBLanguage.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -471,19 +478,11 @@ Partial Class MainWindow
         Me.TBLanguage.Size = New System.Drawing.Size(29, 22)
         Me.TBLanguage.Text = "Language"
         '
-        'mnLanguage
-        '
-        Me.mnLanguage.DropDown = Me.cmnLanguage
-        Me.mnLanguage.Image = Global.iBMSC.My.Resources.Resources.x16Language
-        Me.mnLanguage.Name = "mnLanguage"
-        Me.mnLanguage.Size = New System.Drawing.Size(229, 22)
-        Me.mnLanguage.Text = "&Language"
-        '
         'cmnTheme
         '
         Me.cmnTheme.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TBThemeDef, Me.TBThemeSave, Me.TBThemeRefresh, Me.TBThemeLoadComptability, Me.ToolStripSeparator6})
         Me.cmnTheme.Name = "cmnLanguage"
-        Me.cmnTheme.OwnerItem = Me.mnTheme
+        Me.cmnTheme.OwnerItem = Me.TBTheme
         Me.cmnTheme.Size = New System.Drawing.Size(246, 98)
         '
         'TBThemeDef
@@ -517,6 +516,14 @@ Partial Class MainWindow
         Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
         Me.ToolStripSeparator6.Size = New System.Drawing.Size(242, 6)
         '
+        'mnTheme
+        '
+        Me.mnTheme.DropDown = Me.cmnTheme
+        Me.mnTheme.Image = Global.iBMSC.My.Resources.Resources.x16Theme
+        Me.mnTheme.Name = "mnTheme"
+        Me.mnTheme.Size = New System.Drawing.Size(229, 22)
+        Me.mnTheme.Text = "&Theme"
+        '
         'TBTheme
         '
         Me.TBTheme.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -527,17 +534,9 @@ Partial Class MainWindow
         Me.TBTheme.Size = New System.Drawing.Size(29, 22)
         Me.TBTheme.Text = "Theme"
         '
-        'mnTheme
-        '
-        Me.mnTheme.DropDown = Me.cmnTheme
-        Me.mnTheme.Image = Global.iBMSC.My.Resources.Resources.x16Theme
-        Me.mnTheme.Name = "mnTheme"
-        Me.mnTheme.Size = New System.Drawing.Size(229, 22)
-        Me.mnTheme.Text = "&Theme"
-        '
         'POptionsScroll
         '
-        Me.POptionsScroll.AutoScroll = True
+        Me.POptionsScroll.AutoScroll = true
         Me.POptionsScroll.Controls.Add(Me.POptions)
         Me.POptionsScroll.Dock = System.Windows.Forms.DockStyle.Right
         Me.POptionsScroll.Location = New System.Drawing.Point(882, 0)
@@ -547,7 +546,7 @@ Partial Class MainWindow
         '
         'POptions
         '
-        Me.POptions.AutoSize = True
+        Me.POptions.AutoSize = true
         Me.POptions.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POptions.Controls.Add(Me.POExpansion)
         Me.POptions.Controls.Add(Me.POBeat)
@@ -563,7 +562,7 @@ Partial Class MainWindow
         '
         'POExpansion
         '
-        Me.POExpansion.AutoSize = True
+        Me.POExpansion.AutoSize = true
         Me.POExpansion.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POExpansion.Controls.Add(Me.POExpansionInner)
         Me.POExpansion.Controls.Add(Me.POExpansionSwitch)
@@ -578,25 +577,25 @@ Partial Class MainWindow
         Me.POExpansionInner.Controls.Add(Me.TExpansion)
         Me.POExpansionInner.Controls.Add(Me.POExpansionResizer)
         Me.POExpansionInner.Dock = System.Windows.Forms.DockStyle.Top
-        Me.POExpansionInner.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.POExpansionInner.Font = New System.Drawing.Font("Consolas", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.POExpansionInner.Location = New System.Drawing.Point(0, 20)
         Me.POExpansionInner.Name = "POExpansionInner"
         Me.POExpansionInner.Size = New System.Drawing.Size(183, 250)
         Me.POExpansionInner.TabIndex = 7
-        Me.POExpansionInner.Visible = False
+        Me.POExpansionInner.Visible = false
         '
         'TExpansion
         '
         Me.TExpansion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TExpansion.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TExpansion.HideSelection = False
+        Me.TExpansion.HideSelection = false
         Me.TExpansion.Location = New System.Drawing.Point(0, 0)
-        Me.TExpansion.Multiline = True
+        Me.TExpansion.Multiline = true
         Me.TExpansion.Name = "TExpansion"
         Me.TExpansion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.TExpansion.Size = New System.Drawing.Size(183, 245)
         Me.TExpansion.TabIndex = 0
-        Me.TExpansion.WordWrap = False
+        Me.TExpansion.WordWrap = false
         '
         'POExpansionResizer
         '
@@ -608,8 +607,8 @@ Partial Class MainWindow
         Me.POExpansionResizer.Name = "POExpansionResizer"
         Me.POExpansionResizer.Size = New System.Drawing.Size(183, 5)
         Me.POExpansionResizer.TabIndex = 65
-        Me.POExpansionResizer.TabStop = False
-        Me.POExpansionResizer.UseVisualStyleBackColor = True
+        Me.POExpansionResizer.TabStop = false
+        Me.POExpansionResizer.UseVisualStyleBackColor = true
         '
         'POExpansionSwitch
         '
@@ -617,20 +616,20 @@ Partial Class MainWindow
         Me.POExpansionSwitch.BackColor = System.Drawing.SystemColors.Control
         Me.POExpansionSwitch.Cursor = System.Windows.Forms.Cursors.Hand
         Me.POExpansionSwitch.Dock = System.Windows.Forms.DockStyle.Top
-        Me.POExpansionSwitch.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.POExpansionSwitch.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.POExpansionSwitch.Location = New System.Drawing.Point(0, 0)
         Me.POExpansionSwitch.Name = "POExpansionSwitch"
         Me.POExpansionSwitch.Size = New System.Drawing.Size(183, 20)
         Me.POExpansionSwitch.TabIndex = 6
-        Me.POExpansionSwitch.TabStop = False
+        Me.POExpansionSwitch.TabStop = false
         Me.POExpansionSwitch.Text = "Expansion Code"
         Me.POExpansionSwitch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.POExpansionSwitch.UseCompatibleTextRendering = True
-        Me.POExpansionSwitch.UseVisualStyleBackColor = False
+        Me.POExpansionSwitch.UseCompatibleTextRendering = true
+        Me.POExpansionSwitch.UseVisualStyleBackColor = false
         '
         'POBeat
         '
-        Me.POBeat.AutoSize = True
+        Me.POBeat.AutoSize = true
         Me.POBeat.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POBeat.Controls.Add(Me.POBeatInner)
         Me.POBeat.Controls.Add(Me.POBeatSwitch)
@@ -643,7 +642,7 @@ Partial Class MainWindow
         'POBeatInner
         '
         Me.POBeatInner.ColumnCount = 1
-        Me.POBeatInner.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.POBeatInner.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.POBeatInner.Controls.Add(Me.POBeatExpander, 0, 1)
         Me.POBeatInner.Controls.Add(Me.POBeatResizer, 0, 4)
         Me.POBeatInner.Controls.Add(Me.TableLayoutPanel7, 0, 0)
@@ -656,16 +655,16 @@ Partial Class MainWindow
         Me.POBeatInner.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.POBeatInner.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.POBeatInner.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.POBeatInner.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.POBeatInner.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.POBeatInner.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.POBeatInner.Size = New System.Drawing.Size(183, 250)
         Me.POBeatInner.TabIndex = 6
-        Me.POBeatInner.Visible = False
+        Me.POBeatInner.Visible = false
         '
         'POBeatExpander
         '
         Me.POBeatExpander.Appearance = System.Windows.Forms.Appearance.Button
-        Me.POBeatExpander.AutoSize = True
+        Me.POBeatExpander.AutoSize = true
         Me.POBeatExpander.Cursor = System.Windows.Forms.Cursors.Hand
         Me.POBeatExpander.Dock = System.Windows.Forms.DockStyle.Top
         Me.POBeatExpander.FlatAppearance.BorderSize = 0
@@ -675,10 +674,10 @@ Partial Class MainWindow
         Me.POBeatExpander.Name = "POBeatExpander"
         Me.POBeatExpander.Size = New System.Drawing.Size(183, 25)
         Me.POBeatExpander.TabIndex = 65
-        Me.POBeatExpander.TabStop = False
+        Me.POBeatExpander.TabStop = false
         Me.POBeatExpander.Text = "Expand..."
         Me.POBeatExpander.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.POBeatExpander.UseVisualStyleBackColor = False
+        Me.POBeatExpander.UseVisualStyleBackColor = false
         '
         'POBeatResizer
         '
@@ -691,18 +690,18 @@ Partial Class MainWindow
         Me.POBeatResizer.Name = "POBeatResizer"
         Me.POBeatResizer.Size = New System.Drawing.Size(183, 5)
         Me.POBeatResizer.TabIndex = 64
-        Me.POBeatResizer.TabStop = False
-        Me.POBeatResizer.UseVisualStyleBackColor = True
+        Me.POBeatResizer.TabStop = false
+        Me.POBeatResizer.UseVisualStyleBackColor = true
         '
         'TableLayoutPanel7
         '
-        Me.TableLayoutPanel7.AutoSize = True
+        Me.TableLayoutPanel7.AutoSize = true
         Me.TableLayoutPanel7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.TableLayoutPanel7.ColumnCount = 4
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30!))
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40!))
         Me.TableLayoutPanel7.Controls.Add(Me.nBeatD, 2, 0)
         Me.TableLayoutPanel7.Controls.Add(Me.BBeatApplyV, 3, 1)
         Me.TableLayoutPanel7.Controls.Add(Me.nBeatN, 0, 0)
@@ -732,7 +731,7 @@ Partial Class MainWindow
         '
         'BBeatApplyV
         '
-        Me.BBeatApplyV.AutoSize = True
+        Me.BBeatApplyV.AutoSize = true
         Me.BBeatApplyV.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BBeatApplyV.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BBeatApplyV.Location = New System.Drawing.Point(114, 29)
@@ -741,7 +740,7 @@ Partial Class MainWindow
         Me.BBeatApplyV.Size = New System.Drawing.Size(66, 25)
         Me.BBeatApplyV.TabIndex = 35
         Me.BBeatApplyV.Text = "Apply"
-        Me.BBeatApplyV.UseVisualStyleBackColor = True
+        Me.BBeatApplyV.UseVisualStyleBackColor = true
         '
         'nBeatN
         '
@@ -756,7 +755,7 @@ Partial Class MainWindow
         '
         'BBeatApply
         '
-        Me.BBeatApply.AutoSize = True
+        Me.BBeatApply.AutoSize = true
         Me.BBeatApply.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BBeatApply.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BBeatApply.Location = New System.Drawing.Point(114, 2)
@@ -765,12 +764,12 @@ Partial Class MainWindow
         Me.BBeatApply.Size = New System.Drawing.Size(66, 25)
         Me.BBeatApply.TabIndex = 30
         Me.BBeatApply.Text = "Apply"
-        Me.BBeatApply.UseVisualStyleBackColor = True
+        Me.BBeatApply.UseVisualStyleBackColor = true
         '
         'Label7
         '
         Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label7.AutoSize = True
+        Me.Label7.AutoSize = true
         Me.Label7.Location = New System.Drawing.Point(51, 7)
         Me.Label7.Margin = New System.Windows.Forms.Padding(0)
         Me.Label7.Name = "Label7"
@@ -793,8 +792,8 @@ Partial Class MainWindow
         'LBeat
         '
         Me.LBeat.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LBeat.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBeat.IntegralHeight = False
+        Me.LBeat.Font = New System.Drawing.Font("Consolas", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.LBeat.IntegralHeight = false
         Me.LBeat.ItemHeight = 14
         Me.LBeat.Items.AddRange(New Object() {"000: 15.984375 (1023/64)"})
         Me.LBeat.Location = New System.Drawing.Point(3, 155)
@@ -806,10 +805,10 @@ Partial Class MainWindow
         '
         'POBeatPart2
         '
-        Me.POBeatPart2.AutoSize = True
+        Me.POBeatPart2.AutoSize = true
         Me.POBeatPart2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POBeatPart2.ColumnCount = 1
-        Me.POBeatPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.POBeatPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.POBeatPart2.Controls.Add(Me.CBeatScale, 0, 3)
         Me.POBeatPart2.Controls.Add(Me.CBeatCut, 0, 2)
         Me.POBeatPart2.Controls.Add(Me.CBeatMeasure, 0, 1)
@@ -825,22 +824,22 @@ Partial Class MainWindow
         Me.POBeatPart2.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.POBeatPart2.Size = New System.Drawing.Size(183, 76)
         Me.POBeatPart2.TabIndex = 66
-        Me.POBeatPart2.Visible = False
+        Me.POBeatPart2.Visible = false
         '
         'CBeatScale
         '
-        Me.CBeatScale.AutoSize = True
+        Me.CBeatScale.AutoSize = true
         Me.CBeatScale.Location = New System.Drawing.Point(3, 57)
         Me.CBeatScale.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
         Me.CBeatScale.Name = "CBeatScale"
         Me.CBeatScale.Size = New System.Drawing.Size(151, 19)
         Me.CBeatScale.TabIndex = 3
         Me.CBeatScale.Text = "Scale to measure length"
-        Me.CBeatScale.UseVisualStyleBackColor = True
+        Me.CBeatScale.UseVisualStyleBackColor = true
         '
         'CBeatCut
         '
-        Me.CBeatCut.AutoEllipsis = True
+        Me.CBeatCut.AutoEllipsis = true
         Me.CBeatCut.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CBeatCut.Location = New System.Drawing.Point(3, 38)
         Me.CBeatCut.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
@@ -848,31 +847,31 @@ Partial Class MainWindow
         Me.CBeatCut.Size = New System.Drawing.Size(177, 19)
         Me.CBeatCut.TabIndex = 2
         Me.CBeatCut.Text = "Keep measure position and cut overflow"
-        Me.CBeatCut.UseVisualStyleBackColor = True
+        Me.CBeatCut.UseVisualStyleBackColor = true
         '
         'CBeatMeasure
         '
-        Me.CBeatMeasure.AutoSize = True
+        Me.CBeatMeasure.AutoSize = true
         Me.CBeatMeasure.Location = New System.Drawing.Point(3, 19)
         Me.CBeatMeasure.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
         Me.CBeatMeasure.Name = "CBeatMeasure"
         Me.CBeatMeasure.Size = New System.Drawing.Size(145, 19)
         Me.CBeatMeasure.TabIndex = 1
         Me.CBeatMeasure.Text = "Keep measure position"
-        Me.CBeatMeasure.UseVisualStyleBackColor = True
+        Me.CBeatMeasure.UseVisualStyleBackColor = true
         '
         'CBeatPreserve
         '
-        Me.CBeatPreserve.AutoSize = True
-        Me.CBeatPreserve.Checked = True
+        Me.CBeatPreserve.AutoSize = true
+        Me.CBeatPreserve.Checked = true
         Me.CBeatPreserve.Location = New System.Drawing.Point(3, 0)
         Me.CBeatPreserve.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
         Me.CBeatPreserve.Name = "CBeatPreserve"
         Me.CBeatPreserve.Size = New System.Drawing.Size(145, 19)
         Me.CBeatPreserve.TabIndex = 0
-        Me.CBeatPreserve.TabStop = True
+        Me.CBeatPreserve.TabStop = true
         Me.CBeatPreserve.Text = "Keep absolute position"
-        Me.CBeatPreserve.UseVisualStyleBackColor = True
+        Me.CBeatPreserve.UseVisualStyleBackColor = true
         '
         'POBeatSwitch
         '
@@ -880,21 +879,21 @@ Partial Class MainWindow
         Me.POBeatSwitch.BackColor = System.Drawing.SystemColors.Control
         Me.POBeatSwitch.Cursor = System.Windows.Forms.Cursors.Hand
         Me.POBeatSwitch.Dock = System.Windows.Forms.DockStyle.Top
-        Me.POBeatSwitch.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.POBeatSwitch.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.POBeatSwitch.Location = New System.Drawing.Point(0, 0)
         Me.POBeatSwitch.Name = "POBeatSwitch"
         Me.POBeatSwitch.Size = New System.Drawing.Size(183, 20)
         Me.POBeatSwitch.TabIndex = 5
-        Me.POBeatSwitch.TabStop = False
+        Me.POBeatSwitch.TabStop = false
         Me.POBeatSwitch.Text = "Beat"
         Me.POBeatSwitch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.POBeatSwitch.UseCompatibleTextRendering = True
-        Me.POBeatSwitch.UseVisualStyleBackColor = False
+        Me.POBeatSwitch.UseCompatibleTextRendering = true
+        Me.POBeatSwitch.UseVisualStyleBackColor = false
         '
         'POWAV
         '
-        Me.POWAV.AllowDrop = True
-        Me.POWAV.AutoSize = True
+        Me.POWAV.AllowDrop = true
+        Me.POWAV.AutoSize = true
         Me.POWAV.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POWAV.Controls.Add(Me.POWAVInner)
         Me.POWAV.Controls.Add(Me.POWAVSwitch)
@@ -907,7 +906,7 @@ Partial Class MainWindow
         'POWAVInner
         '
         Me.POWAVInner.ColumnCount = 1
-        Me.POWAVInner.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.POWAVInner.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.POWAVInner.Controls.Add(Me.POWAVExpander, 0, 1)
         Me.POWAVInner.Controls.Add(Me.LWAV, 0, 3)
         Me.POWAVInner.Controls.Add(Me.FlowLayoutPanel3, 0, 0)
@@ -920,7 +919,7 @@ Partial Class MainWindow
         Me.POWAVInner.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.POWAVInner.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.POWAVInner.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.POWAVInner.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.POWAVInner.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.POWAVInner.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.POWAVInner.Size = New System.Drawing.Size(183, 250)
         Me.POWAVInner.TabIndex = 5
@@ -928,7 +927,7 @@ Partial Class MainWindow
         'POWAVExpander
         '
         Me.POWAVExpander.Appearance = System.Windows.Forms.Appearance.Button
-        Me.POWAVExpander.AutoSize = True
+        Me.POWAVExpander.AutoSize = true
         Me.POWAVExpander.Cursor = System.Windows.Forms.Cursors.Hand
         Me.POWAVExpander.Dock = System.Windows.Forms.DockStyle.Top
         Me.POWAVExpander.FlatAppearance.BorderSize = 0
@@ -938,16 +937,16 @@ Partial Class MainWindow
         Me.POWAVExpander.Name = "POWAVExpander"
         Me.POWAVExpander.Size = New System.Drawing.Size(183, 25)
         Me.POWAVExpander.TabIndex = 34
-        Me.POWAVExpander.TabStop = False
+        Me.POWAVExpander.TabStop = false
         Me.POWAVExpander.Text = "Expand..."
         Me.POWAVExpander.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.POWAVExpander.UseVisualStyleBackColor = False
+        Me.POWAVExpander.UseVisualStyleBackColor = false
         '
         'LWAV
         '
         Me.LWAV.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LWAV.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LWAV.IntegralHeight = False
+        Me.LWAV.Font = New System.Drawing.Font("Consolas", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.LWAV.IntegralHeight = false
         Me.LWAV.ItemHeight = 14
         Me.LWAV.Location = New System.Drawing.Point(3, 93)
         Me.LWAV.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
@@ -958,7 +957,7 @@ Partial Class MainWindow
         '
         'FlowLayoutPanel3
         '
-        Me.FlowLayoutPanel3.AutoSize = True
+        Me.FlowLayoutPanel3.AutoSize = true
         Me.FlowLayoutPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.FlowLayoutPanel3.Controls.Add(Me.BWAVUp)
         Me.FlowLayoutPanel3.Controls.Add(Me.BWAVDown)
@@ -968,7 +967,7 @@ Partial Class MainWindow
         Me.FlowLayoutPanel3.Name = "FlowLayoutPanel3"
         Me.FlowLayoutPanel3.Size = New System.Drawing.Size(96, 24)
         Me.FlowLayoutPanel3.TabIndex = 26
-        Me.FlowLayoutPanel3.WrapContents = False
+        Me.FlowLayoutPanel3.WrapContents = false
         '
         'BWAVUp
         '
@@ -979,7 +978,7 @@ Partial Class MainWindow
         Me.BWAVUp.Size = New System.Drawing.Size(24, 24)
         Me.BWAVUp.TabIndex = 26
         Me.ToolTipUniversal.SetToolTip(Me.BWAVUp, "Move Up")
-        Me.BWAVUp.UseVisualStyleBackColor = True
+        Me.BWAVUp.UseVisualStyleBackColor = true
         '
         'BWAVDown
         '
@@ -990,7 +989,7 @@ Partial Class MainWindow
         Me.BWAVDown.Size = New System.Drawing.Size(24, 24)
         Me.BWAVDown.TabIndex = 27
         Me.ToolTipUniversal.SetToolTip(Me.BWAVDown, "Move Down")
-        Me.BWAVDown.UseVisualStyleBackColor = True
+        Me.BWAVDown.UseVisualStyleBackColor = true
         '
         'BWAVBrowse
         '
@@ -1001,7 +1000,7 @@ Partial Class MainWindow
         Me.BWAVBrowse.Size = New System.Drawing.Size(24, 24)
         Me.BWAVBrowse.TabIndex = 30
         Me.ToolTipUniversal.SetToolTip(Me.BWAVBrowse, "Browse")
-        Me.BWAVBrowse.UseVisualStyleBackColor = True
+        Me.BWAVBrowse.UseVisualStyleBackColor = true
         '
         'BWAVRemove
         '
@@ -1012,7 +1011,7 @@ Partial Class MainWindow
         Me.BWAVRemove.Size = New System.Drawing.Size(24, 24)
         Me.BWAVRemove.TabIndex = 31
         Me.ToolTipUniversal.SetToolTip(Me.BWAVRemove, "Remove")
-        Me.BWAVRemove.UseVisualStyleBackColor = True
+        Me.BWAVRemove.UseVisualStyleBackColor = true
         '
         'POWAVResizer
         '
@@ -1024,15 +1023,15 @@ Partial Class MainWindow
         Me.POWAVResizer.Name = "POWAVResizer"
         Me.POWAVResizer.Size = New System.Drawing.Size(183, 5)
         Me.POWAVResizer.TabIndex = 33
-        Me.POWAVResizer.TabStop = False
-        Me.POWAVResizer.UseVisualStyleBackColor = True
+        Me.POWAVResizer.TabStop = false
+        Me.POWAVResizer.UseVisualStyleBackColor = true
         '
         'POWAVPart2
         '
-        Me.POWAVPart2.AutoSize = True
+        Me.POWAVPart2.AutoSize = true
         Me.POWAVPart2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POWAVPart2.ColumnCount = 1
-        Me.POWAVPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.POWAVPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.POWAVPart2.Controls.Add(Me.CWAVMultiSelect, 0, 0)
         Me.POWAVPart2.Controls.Add(Me.CWAVChangeLabel, 0, 1)
         Me.POWAVPart2.Dock = System.Windows.Forms.DockStyle.Fill
@@ -1044,12 +1043,12 @@ Partial Class MainWindow
         Me.POWAVPart2.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.POWAVPart2.Size = New System.Drawing.Size(183, 38)
         Me.POWAVPart2.TabIndex = 35
-        Me.POWAVPart2.Visible = False
+        Me.POWAVPart2.Visible = false
         '
         'CWAVMultiSelect
         '
-        Me.CWAVMultiSelect.AutoSize = True
-        Me.CWAVMultiSelect.Checked = True
+        Me.CWAVMultiSelect.AutoSize = true
+        Me.CWAVMultiSelect.Checked = true
         Me.CWAVMultiSelect.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CWAVMultiSelect.Location = New System.Drawing.Point(3, 0)
         Me.CWAVMultiSelect.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
@@ -1057,12 +1056,12 @@ Partial Class MainWindow
         Me.CWAVMultiSelect.Size = New System.Drawing.Size(154, 19)
         Me.CWAVMultiSelect.TabIndex = 0
         Me.CWAVMultiSelect.Text = "Allow Multiple Selection"
-        Me.CWAVMultiSelect.UseVisualStyleBackColor = True
+        Me.CWAVMultiSelect.UseVisualStyleBackColor = true
         '
         'CWAVChangeLabel
         '
-        Me.CWAVChangeLabel.AutoSize = True
-        Me.CWAVChangeLabel.Checked = True
+        Me.CWAVChangeLabel.AutoSize = true
+        Me.CWAVChangeLabel.Checked = true
         Me.CWAVChangeLabel.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CWAVChangeLabel.Location = New System.Drawing.Point(3, 19)
         Me.CWAVChangeLabel.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
@@ -1070,30 +1069,30 @@ Partial Class MainWindow
         Me.CWAVChangeLabel.Size = New System.Drawing.Size(155, 19)
         Me.CWAVChangeLabel.TabIndex = 1
         Me.CWAVChangeLabel.Text = "Synchronize Note Labels"
-        Me.CWAVChangeLabel.UseVisualStyleBackColor = True
+        Me.CWAVChangeLabel.UseVisualStyleBackColor = true
         '
         'POWAVSwitch
         '
         Me.POWAVSwitch.Appearance = System.Windows.Forms.Appearance.Button
         Me.POWAVSwitch.BackColor = System.Drawing.SystemColors.Control
-        Me.POWAVSwitch.Checked = True
+        Me.POWAVSwitch.Checked = true
         Me.POWAVSwitch.CheckState = System.Windows.Forms.CheckState.Checked
         Me.POWAVSwitch.Cursor = System.Windows.Forms.Cursors.Hand
         Me.POWAVSwitch.Dock = System.Windows.Forms.DockStyle.Top
-        Me.POWAVSwitch.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.POWAVSwitch.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.POWAVSwitch.Location = New System.Drawing.Point(0, 0)
         Me.POWAVSwitch.Name = "POWAVSwitch"
         Me.POWAVSwitch.Size = New System.Drawing.Size(183, 20)
         Me.POWAVSwitch.TabIndex = 4
-        Me.POWAVSwitch.TabStop = False
+        Me.POWAVSwitch.TabStop = false
         Me.POWAVSwitch.Text = "#WAV (Sounds List)"
         Me.POWAVSwitch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.POWAVSwitch.UseCompatibleTextRendering = True
-        Me.POWAVSwitch.UseVisualStyleBackColor = False
+        Me.POWAVSwitch.UseCompatibleTextRendering = true
+        Me.POWAVSwitch.UseVisualStyleBackColor = false
         '
         'POWaveForm
         '
-        Me.POWaveForm.AutoSize = True
+        Me.POWaveForm.AutoSize = true
         Me.POWaveForm.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POWaveForm.Controls.Add(Me.POWaveFormInner)
         Me.POWaveForm.Controls.Add(Me.POWaveFormSwitch)
@@ -1105,7 +1104,7 @@ Partial Class MainWindow
         '
         'POWaveFormInner
         '
-        Me.POWaveFormInner.AutoSize = True
+        Me.POWaveFormInner.AutoSize = true
         Me.POWaveFormInner.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POWaveFormInner.Controls.Add(Me.POWaveFormPart2)
         Me.POWaveFormInner.Controls.Add(Me.POWaveFormExpander)
@@ -1115,16 +1114,16 @@ Partial Class MainWindow
         Me.POWaveFormInner.Name = "POWaveFormInner"
         Me.POWaveFormInner.Size = New System.Drawing.Size(183, 223)
         Me.POWaveFormInner.TabIndex = 29
-        Me.POWaveFormInner.Visible = False
+        Me.POWaveFormInner.Visible = false
         '
         'POWaveFormPart2
         '
-        Me.POWaveFormPart2.AutoSize = True
+        Me.POWaveFormPart2.AutoSize = true
         Me.POWaveFormPart2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POWaveFormPart2.ColumnCount = 3
         Me.POWaveFormPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.POWaveFormPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
-        Me.POWaveFormPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.POWaveFormPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70!))
+        Me.POWaveFormPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30!))
         Me.POWaveFormPart2.Controls.Add(Me.TWSaturation, 2, 4)
         Me.POWaveFormPart2.Controls.Add(Me.PictureBox2, 0, 0)
         Me.POWaveFormPart2.Controls.Add(Me.TWTransparency, 2, 3)
@@ -1144,11 +1143,11 @@ Partial Class MainWindow
         Me.POWaveFormPart2.Location = New System.Drawing.Point(0, 83)
         Me.POWaveFormPart2.Name = "POWaveFormPart2"
         Me.POWaveFormPart2.RowCount = 5
-        Me.POWaveFormPart2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
-        Me.POWaveFormPart2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
-        Me.POWaveFormPart2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
-        Me.POWaveFormPart2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
-        Me.POWaveFormPart2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
+        Me.POWaveFormPart2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28!))
+        Me.POWaveFormPart2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28!))
+        Me.POWaveFormPart2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28!))
+        Me.POWaveFormPart2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28!))
+        Me.POWaveFormPart2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28!))
         Me.POWaveFormPart2.Size = New System.Drawing.Size(183, 140)
         Me.POWaveFormPart2.TabIndex = 5
         '
@@ -1172,7 +1171,7 @@ Partial Class MainWindow
         Me.PictureBox2.Size = New System.Drawing.Size(24, 24)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox2.TabIndex = 60
-        Me.PictureBox2.TabStop = False
+        Me.PictureBox2.TabStop = false
         '
         'TWTransparency
         '
@@ -1195,7 +1194,7 @@ Partial Class MainWindow
         Me.PictureBox3.Size = New System.Drawing.Size(24, 24)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox3.TabIndex = 61
-        Me.PictureBox3.TabStop = False
+        Me.PictureBox3.TabStop = false
         '
         'TWPrecision
         '
@@ -1217,7 +1216,7 @@ Partial Class MainWindow
         Me.PictureBox4.Size = New System.Drawing.Size(24, 24)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox4.TabIndex = 62
-        Me.PictureBox4.TabStop = False
+        Me.PictureBox4.TabStop = false
         '
         'TWWidth
         '
@@ -1240,7 +1239,7 @@ Partial Class MainWindow
         Me.PictureBox5.Size = New System.Drawing.Size(24, 24)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox5.TabIndex = 67
-        Me.PictureBox5.TabStop = False
+        Me.PictureBox5.TabStop = false
         '
         'TWLeft
         '
@@ -1263,7 +1262,7 @@ Partial Class MainWindow
         Me.PictureBox6.Size = New System.Drawing.Size(24, 24)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox6.TabIndex = 66
-        Me.PictureBox6.TabStop = False
+        Me.PictureBox6.TabStop = false
         '
         'TWSaturation2
         '
@@ -1336,7 +1335,7 @@ Partial Class MainWindow
         'POWaveFormExpander
         '
         Me.POWaveFormExpander.Appearance = System.Windows.Forms.Appearance.Button
-        Me.POWaveFormExpander.AutoSize = True
+        Me.POWaveFormExpander.AutoSize = true
         Me.POWaveFormExpander.Cursor = System.Windows.Forms.Cursors.Hand
         Me.POWaveFormExpander.Dock = System.Windows.Forms.DockStyle.Top
         Me.POWaveFormExpander.FlatAppearance.BorderSize = 0
@@ -1346,17 +1345,17 @@ Partial Class MainWindow
         Me.POWaveFormExpander.Name = "POWaveFormExpander"
         Me.POWaveFormExpander.Size = New System.Drawing.Size(183, 25)
         Me.POWaveFormExpander.TabIndex = 29
-        Me.POWaveFormExpander.TabStop = False
+        Me.POWaveFormExpander.TabStop = false
         Me.POWaveFormExpander.Text = "Expand..."
         Me.POWaveFormExpander.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.POWaveFormExpander.UseVisualStyleBackColor = False
+        Me.POWaveFormExpander.UseVisualStyleBackColor = false
         '
         'POWaveFormPart1
         '
-        Me.POWaveFormPart1.AutoSize = True
+        Me.POWaveFormPart1.AutoSize = true
         Me.POWaveFormPart1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POWaveFormPart1.ColumnCount = 1
-        Me.POWaveFormPart1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.POWaveFormPart1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.POWaveFormPart1.Controls.Add(Me.TableLayoutPanel1, 0, 0)
         Me.POWaveFormPart1.Controls.Add(Me.TableLayoutPanel6, 0, 1)
         Me.POWaveFormPart1.Dock = System.Windows.Forms.DockStyle.Top
@@ -1370,11 +1369,11 @@ Partial Class MainWindow
         '
         'TableLayoutPanel1
         '
-        Me.TableLayoutPanel1.AutoSize = True
+        Me.TableLayoutPanel1.AutoSize = true
         Me.TableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.TableLayoutPanel1.Controls.Add(Me.FlowLayoutPanel1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.TWFileName, 1, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -1388,7 +1387,7 @@ Partial Class MainWindow
         '
         'FlowLayoutPanel1
         '
-        Me.FlowLayoutPanel1.AutoSize = True
+        Me.FlowLayoutPanel1.AutoSize = true
         Me.FlowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.FlowLayoutPanel1.Controls.Add(Me.BWLoad)
         Me.FlowLayoutPanel1.Controls.Add(Me.BWClear)
@@ -1397,7 +1396,7 @@ Partial Class MainWindow
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(72, 24)
         Me.FlowLayoutPanel1.TabIndex = 72
-        Me.FlowLayoutPanel1.WrapContents = False
+        Me.FlowLayoutPanel1.WrapContents = false
         '
         'BWLoad
         '
@@ -1408,7 +1407,7 @@ Partial Class MainWindow
         Me.BWLoad.Size = New System.Drawing.Size(24, 24)
         Me.BWLoad.TabIndex = 40
         Me.ToolTipUniversal.SetToolTip(Me.BWLoad, "Load WaveForm")
-        Me.BWLoad.UseVisualStyleBackColor = True
+        Me.BWLoad.UseVisualStyleBackColor = true
         '
         'BWClear
         '
@@ -1419,12 +1418,12 @@ Partial Class MainWindow
         Me.BWClear.Size = New System.Drawing.Size(24, 24)
         Me.BWClear.TabIndex = 41
         Me.ToolTipUniversal.SetToolTip(Me.BWClear, "Clear WaveForm")
-        Me.BWClear.UseVisualStyleBackColor = True
+        Me.BWClear.UseVisualStyleBackColor = true
         '
         'BWLock
         '
         Me.BWLock.Appearance = System.Windows.Forms.Appearance.Button
-        Me.BWLock.Checked = True
+        Me.BWLock.Checked = true
         Me.BWLock.CheckState = System.Windows.Forms.CheckState.Checked
         Me.BWLock.Image = Global.iBMSC.My.Resources.Resources.x16Lock
         Me.BWLock.Location = New System.Drawing.Point(48, 0)
@@ -1433,26 +1432,26 @@ Partial Class MainWindow
         Me.BWLock.Size = New System.Drawing.Size(24, 24)
         Me.BWLock.TabIndex = 0
         Me.ToolTipUniversal.SetToolTip(Me.BWLock, "Lock to BGM")
-        Me.BWLock.UseVisualStyleBackColor = True
+        Me.BWLock.UseVisualStyleBackColor = true
         '
         'TWFileName
         '
         Me.TWFileName.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TWFileName.Location = New System.Drawing.Point(81, 3)
         Me.TWFileName.Name = "TWFileName"
-        Me.TWFileName.ReadOnly = True
+        Me.TWFileName.ReadOnly = true
         Me.TWFileName.Size = New System.Drawing.Size(99, 23)
         Me.TWFileName.TabIndex = 42
         Me.TWFileName.Text = "(None)"
         '
         'TableLayoutPanel6
         '
-        Me.TableLayoutPanel6.AutoSize = True
+        Me.TableLayoutPanel6.AutoSize = true
         Me.TableLayoutPanel6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.TableLayoutPanel6.ColumnCount = 3
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.0!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40!))
         Me.TableLayoutPanel6.Controls.Add(Me.PictureBox1, 0, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.TWPosition2, 1, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.TWPosition, 2, 0)
@@ -1461,7 +1460,7 @@ Partial Class MainWindow
         Me.TableLayoutPanel6.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 1
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28!))
         Me.TableLayoutPanel6.Size = New System.Drawing.Size(183, 28)
         Me.TableLayoutPanel6.TabIndex = 1
         '
@@ -1474,12 +1473,12 @@ Partial Class MainWindow
         Me.PictureBox1.Size = New System.Drawing.Size(24, 24)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 59
-        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.TabStop = false
         '
         'TWPosition2
         '
         Me.TWPosition2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TWPosition2.Enabled = False
+        Me.TWPosition2.Enabled = false
         Me.TWPosition2.LargeChange = 24
         Me.TWPosition2.Location = New System.Drawing.Point(30, 0)
         Me.TWPosition2.Margin = New System.Windows.Forms.Padding(0)
@@ -1493,7 +1492,7 @@ Partial Class MainWindow
         '
         Me.TWPosition.DecimalPlaces = 2
         Me.TWPosition.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TWPosition.Enabled = False
+        Me.TWPosition.Enabled = false
         Me.TWPosition.Location = New System.Drawing.Point(121, 0)
         Me.TWPosition.Margin = New System.Windows.Forms.Padding(0, 0, 3, 0)
         Me.TWPosition.Maximum = New Decimal(New Integer() {192000, 0, 0, 0})
@@ -1507,20 +1506,20 @@ Partial Class MainWindow
         Me.POWaveFormSwitch.BackColor = System.Drawing.SystemColors.Control
         Me.POWaveFormSwitch.Cursor = System.Windows.Forms.Cursors.Hand
         Me.POWaveFormSwitch.Dock = System.Windows.Forms.DockStyle.Top
-        Me.POWaveFormSwitch.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.POWaveFormSwitch.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.POWaveFormSwitch.Location = New System.Drawing.Point(0, 0)
         Me.POWaveFormSwitch.Name = "POWaveFormSwitch"
         Me.POWaveFormSwitch.Size = New System.Drawing.Size(183, 20)
         Me.POWaveFormSwitch.TabIndex = 3
-        Me.POWaveFormSwitch.TabStop = False
+        Me.POWaveFormSwitch.TabStop = false
         Me.POWaveFormSwitch.Text = "WaveForm"
         Me.POWaveFormSwitch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.POWaveFormSwitch.UseCompatibleTextRendering = True
-        Me.POWaveFormSwitch.UseVisualStyleBackColor = False
+        Me.POWaveFormSwitch.UseCompatibleTextRendering = true
+        Me.POWaveFormSwitch.UseVisualStyleBackColor = false
         '
         'POGrid
         '
-        Me.POGrid.AutoSize = True
+        Me.POGrid.AutoSize = true
         Me.POGrid.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POGrid.Controls.Add(Me.POGridInner)
         Me.POGrid.Controls.Add(Me.POGridSwitch)
@@ -1532,7 +1531,7 @@ Partial Class MainWindow
         '
         'POGridInner
         '
-        Me.POGridInner.AutoSize = True
+        Me.POGridInner.AutoSize = true
         Me.POGridInner.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POGridInner.Controls.Add(Me.POGridPart2)
         Me.POGridInner.Controls.Add(Me.POGridExpander)
@@ -1545,10 +1544,10 @@ Partial Class MainWindow
         '
         'POGridPart2
         '
-        Me.POGridPart2.AutoSize = True
+        Me.POGridPart2.AutoSize = true
         Me.POGridPart2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POGridPart2.ColumnCount = 1
-        Me.POGridPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.POGridPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.POGridPart2.Controls.Add(Me.TableLayoutPanel5, 0, 1)
         Me.POGridPart2.Controls.Add(Me.TableLayoutPanel4, 0, 0)
         Me.POGridPart2.Dock = System.Windows.Forms.DockStyle.Top
@@ -1557,17 +1556,17 @@ Partial Class MainWindow
         Me.POGridPart2.RowCount = 2
         Me.POGridPart2.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.POGridPart2.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.POGridPart2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.POGridPart2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20!))
         Me.POGridPart2.Size = New System.Drawing.Size(183, 58)
         Me.POGridPart2.TabIndex = 0
         '
         'TableLayoutPanel5
         '
-        Me.TableLayoutPanel5.AutoSize = True
+        Me.TableLayoutPanel5.AutoSize = true
         Me.TableLayoutPanel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.TableLayoutPanel5.ColumnCount = 2
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.TableLayoutPanel5.Controls.Add(Me.FlowLayoutPanel2, 1, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.Label5, 0, 0)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
@@ -1581,16 +1580,16 @@ Partial Class MainWindow
         '
         'FlowLayoutPanel2
         '
-        Me.FlowLayoutPanel2.AutoSize = True
+        Me.FlowLayoutPanel2.AutoSize = true
         Me.FlowLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.FlowLayoutPanel2.Controls.Add(Me.cVSLockL)
         Me.FlowLayoutPanel2.Controls.Add(Me.cVSLock)
         Me.FlowLayoutPanel2.Controls.Add(Me.cVSLockR)
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(115, 3)
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(114, 3)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(65, 23)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(66, 23)
         Me.FlowLayoutPanel2.TabIndex = 72
-        Me.FlowLayoutPanel2.WrapContents = False
+        Me.FlowLayoutPanel2.WrapContents = false
         '
         'cVSLockL
         '
@@ -1633,22 +1632,22 @@ Partial Class MainWindow
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
+        Me.Label5.AutoSize = true
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label5.Location = New System.Drawing.Point(3, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(106, 29)
+        Me.Label5.Size = New System.Drawing.Size(105, 29)
         Me.Label5.TabIndex = 39
         Me.Label5.Text = "Vertical Scroll Lock"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'TableLayoutPanel4
         '
-        Me.TableLayoutPanel4.AutoSize = True
+        Me.TableLayoutPanel4.AutoSize = true
         Me.TableLayoutPanel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.TableLayoutPanel4.ColumnCount = 2
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.TableLayoutPanel4.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.CGB, 1, 0)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
@@ -1662,7 +1661,7 @@ Partial Class MainWindow
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        Me.Label1.AutoSize = true
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label1.Location = New System.Drawing.Point(3, 0)
         Me.Label1.Name = "Label1"
@@ -1685,7 +1684,7 @@ Partial Class MainWindow
         'POGridExpander
         '
         Me.POGridExpander.Appearance = System.Windows.Forms.Appearance.Button
-        Me.POGridExpander.AutoSize = True
+        Me.POGridExpander.AutoSize = true
         Me.POGridExpander.Cursor = System.Windows.Forms.Cursors.Hand
         Me.POGridExpander.Dock = System.Windows.Forms.DockStyle.Top
         Me.POGridExpander.FlatAppearance.BorderSize = 0
@@ -1695,17 +1694,17 @@ Partial Class MainWindow
         Me.POGridExpander.Name = "POGridExpander"
         Me.POGridExpander.Size = New System.Drawing.Size(183, 25)
         Me.POGridExpander.TabIndex = 27
-        Me.POGridExpander.TabStop = False
+        Me.POGridExpander.TabStop = false
         Me.POGridExpander.Text = "Expand..."
         Me.POGridExpander.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.POGridExpander.UseVisualStyleBackColor = False
+        Me.POGridExpander.UseVisualStyleBackColor = false
         '
         'POGridPart1
         '
-        Me.POGridPart1.AutoSize = True
+        Me.POGridPart1.AutoSize = true
         Me.POGridPart1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POGridPart1.ColumnCount = 1
-        Me.POGridPart1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.POGridPart1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.POGridPart1.Controls.Add(Me.TableLayoutPanel3, 0, 1)
         Me.POGridPart1.Controls.Add(Me.CGDisableVertical, 0, 3)
         Me.POGridPart1.Controls.Add(Me.CGSnap, 0, 2)
@@ -1718,18 +1717,18 @@ Partial Class MainWindow
         Me.POGridPart1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.POGridPart1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.POGridPart1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.POGridPart1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.POGridPart1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20!))
         Me.POGridPart1.Size = New System.Drawing.Size(183, 127)
         Me.POGridPart1.TabIndex = 11
         '
         'TableLayoutPanel3
         '
-        Me.TableLayoutPanel3.AutoSize = True
+        Me.TableLayoutPanel3.AutoSize = true
         Me.TableLayoutPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.TableLayoutPanel3.ColumnCount = 3
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30!))
         Me.TableLayoutPanel3.Controls.Add(Me.PictureBox9, 0, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.CGHeight2, 1, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.CGHeight, 2, 0)
@@ -1741,8 +1740,8 @@ Partial Class MainWindow
         Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 2
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28!))
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(183, 56)
         Me.TableLayoutPanel3.TabIndex = 12
         '
@@ -1755,7 +1754,7 @@ Partial Class MainWindow
         Me.PictureBox9.Size = New System.Drawing.Size(24, 24)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox9.TabIndex = 27
-        Me.PictureBox9.TabStop = False
+        Me.PictureBox9.TabStop = false
         '
         'CGHeight2
         '
@@ -1794,7 +1793,7 @@ Partial Class MainWindow
         Me.PictureBox10.Size = New System.Drawing.Size(24, 24)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox10.TabIndex = 28
-        Me.PictureBox10.TabStop = False
+        Me.PictureBox10.TabStop = false
         '
         'CGWidth2
         '
@@ -1826,19 +1825,19 @@ Partial Class MainWindow
         '
         'CGDisableVertical
         '
-        Me.CGDisableVertical.AutoSize = True
+        Me.CGDisableVertical.AutoSize = true
         Me.CGDisableVertical.Location = New System.Drawing.Point(3, 108)
         Me.CGDisableVertical.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
         Me.CGDisableVertical.Name = "CGDisableVertical"
         Me.CGDisableVertical.Size = New System.Drawing.Size(162, 19)
         Me.CGDisableVertical.TabIndex = 45
         Me.CGDisableVertical.Text = "Disable vertical moves (D)"
-        Me.CGDisableVertical.UseVisualStyleBackColor = True
+        Me.CGDisableVertical.UseVisualStyleBackColor = true
         '
         'CGSnap
         '
-        Me.CGSnap.AutoSize = True
-        Me.CGSnap.Checked = True
+        Me.CGSnap.AutoSize = true
+        Me.CGSnap.Checked = true
         Me.CGSnap.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CGSnap.Location = New System.Drawing.Point(3, 89)
         Me.CGSnap.Margin = New System.Windows.Forms.Padding(3, 3, 3, 0)
@@ -1846,16 +1845,16 @@ Partial Class MainWindow
         Me.CGSnap.Size = New System.Drawing.Size(109, 19)
         Me.CGSnap.TabIndex = 10
         Me.CGSnap.Text = "Snap to grid (G)"
-        Me.CGSnap.UseVisualStyleBackColor = True
+        Me.CGSnap.UseVisualStyleBackColor = true
         '
         'TableLayoutPanel2
         '
-        Me.TableLayoutPanel2.AutoSize = True
+        Me.TableLayoutPanel2.AutoSize = true
         Me.TableLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.TableLayoutPanel2.ColumnCount = 4
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.TableLayoutPanel2.Controls.Add(Me.PictureBox7, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.CGDivide, 1, 0)
@@ -1866,7 +1865,7 @@ Partial Class MainWindow
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(183, 30)
         Me.TableLayoutPanel2.TabIndex = 11
         '
@@ -1879,7 +1878,7 @@ Partial Class MainWindow
         Me.PictureBox7.Size = New System.Drawing.Size(24, 24)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox7.TabIndex = 25
-        Me.PictureBox7.TabStop = False
+        Me.PictureBox7.TabStop = false
         '
         'CGDivide
         '
@@ -1912,30 +1911,30 @@ Partial Class MainWindow
         Me.BGSlash.Name = "BGSlash"
         Me.BGSlash.Size = New System.Drawing.Size(22, 22)
         Me.BGSlash.TabIndex = 38
-        Me.BGSlash.UseVisualStyleBackColor = True
+        Me.BGSlash.UseVisualStyleBackColor = true
         '
         'POGridSwitch
         '
         Me.POGridSwitch.Appearance = System.Windows.Forms.Appearance.Button
         Me.POGridSwitch.BackColor = System.Drawing.SystemColors.Control
-        Me.POGridSwitch.Checked = True
+        Me.POGridSwitch.Checked = true
         Me.POGridSwitch.CheckState = System.Windows.Forms.CheckState.Checked
         Me.POGridSwitch.Cursor = System.Windows.Forms.Cursors.Hand
         Me.POGridSwitch.Dock = System.Windows.Forms.DockStyle.Top
-        Me.POGridSwitch.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.POGridSwitch.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.POGridSwitch.Location = New System.Drawing.Point(0, 0)
         Me.POGridSwitch.Name = "POGridSwitch"
         Me.POGridSwitch.Size = New System.Drawing.Size(183, 20)
         Me.POGridSwitch.TabIndex = 2
-        Me.POGridSwitch.TabStop = False
+        Me.POGridSwitch.TabStop = false
         Me.POGridSwitch.Text = "Grid"
         Me.POGridSwitch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.POGridSwitch.UseCompatibleTextRendering = True
-        Me.POGridSwitch.UseVisualStyleBackColor = False
+        Me.POGridSwitch.UseCompatibleTextRendering = true
+        Me.POGridSwitch.UseVisualStyleBackColor = false
         '
         'POHeader
         '
-        Me.POHeader.AutoSize = True
+        Me.POHeader.AutoSize = true
         Me.POHeader.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POHeader.Controls.Add(Me.POHeaderInner)
         Me.POHeader.Controls.Add(Me.POHeaderSwitch)
@@ -1947,7 +1946,7 @@ Partial Class MainWindow
         '
         'POHeaderInner
         '
-        Me.POHeaderInner.AutoSize = True
+        Me.POHeaderInner.AutoSize = true
         Me.POHeaderInner.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POHeaderInner.Controls.Add(Me.POHeaderPart2)
         Me.POHeaderInner.Controls.Add(Me.POHeaderExpander)
@@ -1960,11 +1959,11 @@ Partial Class MainWindow
         '
         'POHeaderPart2
         '
-        Me.POHeaderPart2.AutoSize = True
+        Me.POHeaderPart2.AutoSize = true
         Me.POHeaderPart2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POHeaderPart2.ColumnCount = 3
         Me.POHeaderPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.POHeaderPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.POHeaderPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.POHeaderPart2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.POHeaderPart2.Controls.Add(Me.CHDifficulty, 1, 5)
         Me.POHeaderPart2.Controls.Add(Me.Label13, 2, 6)
@@ -2023,7 +2022,7 @@ Partial Class MainWindow
         '
         'Label13
         '
-        Me.Label13.AutoSize = True
+        Me.Label13.AutoSize = true
         Me.Label13.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label13.Location = New System.Drawing.Point(158, 141)
         Me.Label13.Margin = New System.Windows.Forms.Padding(3, 0, 0, 0)
@@ -2044,7 +2043,7 @@ Partial Class MainWindow
         '
         'Label25
         '
-        Me.Label25.AutoSize = True
+        Me.Label25.AutoSize = true
         Me.Label25.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label25.Location = New System.Drawing.Point(158, 164)
         Me.Label25.Margin = New System.Windows.Forms.Padding(3, 0, 0, 0)
@@ -2070,7 +2069,7 @@ Partial Class MainWindow
         'Label23
         '
         Me.Label23.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label23.AutoSize = True
+        Me.Label23.AutoSize = true
         Me.Label23.Location = New System.Drawing.Point(20, 145)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(44, 15)
@@ -2081,7 +2080,7 @@ Partial Class MainWindow
         'Label21
         '
         Me.Label21.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label21.AutoSize = True
+        Me.Label21.AutoSize = true
         Me.Label21.Location = New System.Drawing.Point(9, 122)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(55, 15)
@@ -2102,7 +2101,7 @@ Partial Class MainWindow
         'Label24
         '
         Me.Label24.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label24.AutoSize = True
+        Me.Label24.AutoSize = true
         Me.Label24.Location = New System.Drawing.Point(25, 214)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(39, 15)
@@ -2113,7 +2112,7 @@ Partial Class MainWindow
         'Label15
         '
         Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label15.AutoSize = True
+        Me.Label15.AutoSize = true
         Me.Label15.Location = New System.Drawing.Point(14, 4)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(50, 15)
@@ -2133,10 +2132,10 @@ Partial Class MainWindow
         'Label20
         '
         Me.Label20.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(30, 168)
+        Me.Label20.AutoSize = true
+        Me.Label20.Location = New System.Drawing.Point(31, 168)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(34, 15)
+        Me.Label20.Size = New System.Drawing.Size(33, 15)
         Me.Label20.TabIndex = 5
         Me.Label20.Text = "Total"
         Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2151,7 +2150,7 @@ Partial Class MainWindow
         Me.BHStageFile.Size = New System.Drawing.Size(25, 24)
         Me.BHStageFile.TabIndex = 20
         Me.BHStageFile.Text = "..."
-        Me.BHStageFile.UseVisualStyleBackColor = True
+        Me.BHStageFile.UseVisualStyleBackColor = true
         '
         'BHBanner
         '
@@ -2163,12 +2162,12 @@ Partial Class MainWindow
         Me.BHBanner.Size = New System.Drawing.Size(25, 24)
         Me.BHBanner.TabIndex = 21
         Me.BHBanner.Text = "..."
-        Me.BHBanner.UseVisualStyleBackColor = True
+        Me.BHBanner.UseVisualStyleBackColor = true
         '
         'Label19
         '
         Me.Label19.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label19.AutoSize = True
+        Me.Label19.AutoSize = true
         Me.Label19.Location = New System.Drawing.Point(3, 191)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(61, 15)
@@ -2186,12 +2185,12 @@ Partial Class MainWindow
         Me.BHBackBMP.Size = New System.Drawing.Size(25, 24)
         Me.BHBackBMP.TabIndex = 22
         Me.BHBackBMP.Text = "..."
-        Me.BHBackBMP.UseVisualStyleBackColor = True
+        Me.BHBackBMP.UseVisualStyleBackColor = true
         '
         'Label17
         '
         Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label17.AutoSize = True
+        Me.Label17.AutoSize = true
         Me.Label17.Location = New System.Drawing.Point(9, 27)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(55, 15)
@@ -2202,7 +2201,7 @@ Partial Class MainWindow
         'Label16
         '
         Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label16.AutoSize = True
+        Me.Label16.AutoSize = true
         Me.Label16.Location = New System.Drawing.Point(7, 50)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(57, 15)
@@ -2213,7 +2212,7 @@ Partial Class MainWindow
         'Label12
         '
         Me.Label12.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label12.AutoSize = True
+        Me.Label12.AutoSize = true
         Me.Label12.Location = New System.Drawing.Point(20, 74)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(44, 15)
@@ -2233,7 +2232,7 @@ Partial Class MainWindow
         'Label11
         '
         Me.Label11.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label11.AutoSize = True
+        Me.Label11.AutoSize = true
         Me.Label11.Location = New System.Drawing.Point(4, 98)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(60, 15)
@@ -2282,7 +2281,7 @@ Partial Class MainWindow
         'POHeaderExpander
         '
         Me.POHeaderExpander.Appearance = System.Windows.Forms.Appearance.Button
-        Me.POHeaderExpander.AutoSize = True
+        Me.POHeaderExpander.AutoSize = true
         Me.POHeaderExpander.Cursor = System.Windows.Forms.Cursors.Hand
         Me.POHeaderExpander.Dock = System.Windows.Forms.DockStyle.Top
         Me.POHeaderExpander.FlatAppearance.BorderSize = 0
@@ -2292,18 +2291,18 @@ Partial Class MainWindow
         Me.POHeaderExpander.Name = "POHeaderExpander"
         Me.POHeaderExpander.Size = New System.Drawing.Size(183, 25)
         Me.POHeaderExpander.TabIndex = 26
-        Me.POHeaderExpander.TabStop = False
+        Me.POHeaderExpander.TabStop = false
         Me.POHeaderExpander.Text = "Expand..."
         Me.POHeaderExpander.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.POHeaderExpander.UseVisualStyleBackColor = False
+        Me.POHeaderExpander.UseVisualStyleBackColor = false
         '
         'POHeaderPart1
         '
-        Me.POHeaderPart1.AutoSize = True
+        Me.POHeaderPart1.AutoSize = true
         Me.POHeaderPart1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POHeaderPart1.ColumnCount = 2
         Me.POHeaderPart1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.POHeaderPart1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.POHeaderPart1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100!))
         Me.POHeaderPart1.Controls.Add(Me.Label3, 0, 0)
         Me.POHeaderPart1.Controls.Add(Me.THPlayLevel, 1, 6)
         Me.POHeaderPart1.Controls.Add(Me.CHRank, 1, 5)
@@ -2335,7 +2334,7 @@ Partial Class MainWindow
         'Label3
         '
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label3.AutoSize = True
+        Me.Label3.AutoSize = true
         Me.Label3.Location = New System.Drawing.Point(32, 4)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(30, 15)
@@ -2367,7 +2366,7 @@ Partial Class MainWindow
         'Label10
         '
         Me.Label10.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label10.AutoSize = True
+        Me.Label10.AutoSize = true
         Me.Label10.Location = New System.Drawing.Point(29, 119)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(33, 15)
@@ -2390,7 +2389,7 @@ Partial Class MainWindow
         'Label4
         '
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label4.AutoSize = True
+        Me.Label4.AutoSize = true
         Me.Label4.Location = New System.Drawing.Point(27, 27)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(35, 15)
@@ -2424,7 +2423,7 @@ Partial Class MainWindow
         'Label2
         '
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label2.AutoSize = True
+        Me.Label2.AutoSize = true
         Me.Label2.Location = New System.Drawing.Point(24, 50)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(38, 15)
@@ -2453,7 +2452,7 @@ Partial Class MainWindow
         'Label9
         '
         Me.Label9.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label9.AutoSize = True
+        Me.Label9.AutoSize = true
         Me.Label9.Location = New System.Drawing.Point(30, 73)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(32, 15)
@@ -2464,7 +2463,7 @@ Partial Class MainWindow
         'Label8
         '
         Me.Label8.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label8.AutoSize = True
+        Me.Label8.AutoSize = true
         Me.Label8.Location = New System.Drawing.Point(23, 96)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(39, 15)
@@ -2475,7 +2474,7 @@ Partial Class MainWindow
         'Label6
         '
         Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label6.AutoSize = True
+        Me.Label6.AutoSize = true
         Me.Label6.Location = New System.Drawing.Point(3, 142)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(59, 15)
@@ -2487,20 +2486,20 @@ Partial Class MainWindow
         '
         Me.POHeaderSwitch.Appearance = System.Windows.Forms.Appearance.Button
         Me.POHeaderSwitch.BackColor = System.Drawing.SystemColors.Control
-        Me.POHeaderSwitch.Checked = True
+        Me.POHeaderSwitch.Checked = true
         Me.POHeaderSwitch.CheckState = System.Windows.Forms.CheckState.Checked
         Me.POHeaderSwitch.Cursor = System.Windows.Forms.Cursors.Hand
         Me.POHeaderSwitch.Dock = System.Windows.Forms.DockStyle.Top
-        Me.POHeaderSwitch.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.POHeaderSwitch.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.POHeaderSwitch.Location = New System.Drawing.Point(0, 0)
         Me.POHeaderSwitch.Name = "POHeaderSwitch"
         Me.POHeaderSwitch.Size = New System.Drawing.Size(183, 20)
         Me.POHeaderSwitch.TabIndex = 1
-        Me.POHeaderSwitch.TabStop = False
+        Me.POHeaderSwitch.TabStop = false
         Me.POHeaderSwitch.Text = "Header"
         Me.POHeaderSwitch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.POHeaderSwitch.UseCompatibleTextRendering = True
-        Me.POHeaderSwitch.UseVisualStyleBackColor = False
+        Me.POHeaderSwitch.UseCompatibleTextRendering = true
+        Me.POHeaderSwitch.UseVisualStyleBackColor = false
         '
         'Timer1
         '
@@ -2528,7 +2527,7 @@ Partial Class MainWindow
         '
         'AutoSaveTimer
         '
-        Me.AutoSaveTimer.Enabled = True
+        Me.AutoSaveTimer.Enabled = true
         Me.AutoSaveTimer.Interval = 300000
         '
         'mnMain
@@ -2555,7 +2554,7 @@ Partial Class MainWindow
         '
         Me.mnNew.Image = Global.iBMSC.My.Resources.Resources.x16New
         Me.mnNew.Name = "mnNew"
-        Me.mnNew.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
+        Me.mnNew.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N),System.Windows.Forms.Keys)
         Me.mnNew.Size = New System.Drawing.Size(199, 22)
         Me.mnNew.Text = "&New"
         '
@@ -2563,7 +2562,7 @@ Partial Class MainWindow
         '
         Me.mnOpen.Image = Global.iBMSC.My.Resources.Resources.x16Open
         Me.mnOpen.Name = "mnOpen"
-        Me.mnOpen.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
+        Me.mnOpen.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O),System.Windows.Forms.Keys)
         Me.mnOpen.Size = New System.Drawing.Size(199, 22)
         Me.mnOpen.Text = "&Open"
         '
@@ -2590,7 +2589,7 @@ Partial Class MainWindow
         '
         Me.mnSave.Image = Global.iBMSC.My.Resources.Resources.x16Save
         Me.mnSave.Name = "mnSave"
-        Me.mnSave.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.mnSave.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S),System.Windows.Forms.Keys)
         Me.mnSave.Size = New System.Drawing.Size(199, 22)
         Me.mnSave.Text = "&Save"
         '
@@ -2615,7 +2614,7 @@ Partial Class MainWindow
         '
         'mnOpenR0
         '
-        Me.mnOpenR0.Enabled = False
+        Me.mnOpenR0.Enabled = false
         Me.mnOpenR0.Name = "mnOpenR0"
         Me.mnOpenR0.Size = New System.Drawing.Size(199, 22)
         Me.mnOpenR0.Tag = "0"
@@ -2623,7 +2622,7 @@ Partial Class MainWindow
         '
         'mnOpenR1
         '
-        Me.mnOpenR1.Enabled = False
+        Me.mnOpenR1.Enabled = false
         Me.mnOpenR1.Name = "mnOpenR1"
         Me.mnOpenR1.Size = New System.Drawing.Size(199, 22)
         Me.mnOpenR1.Tag = "1"
@@ -2631,7 +2630,7 @@ Partial Class MainWindow
         '
         'mnOpenR2
         '
-        Me.mnOpenR2.Enabled = False
+        Me.mnOpenR2.Enabled = false
         Me.mnOpenR2.Name = "mnOpenR2"
         Me.mnOpenR2.Size = New System.Drawing.Size(199, 22)
         Me.mnOpenR2.Tag = "2"
@@ -2639,7 +2638,7 @@ Partial Class MainWindow
         '
         'mnOpenR3
         '
-        Me.mnOpenR3.Enabled = False
+        Me.mnOpenR3.Enabled = false
         Me.mnOpenR3.Name = "mnOpenR3"
         Me.mnOpenR3.Size = New System.Drawing.Size(199, 22)
         Me.mnOpenR3.Tag = "3"
@@ -2647,7 +2646,7 @@ Partial Class MainWindow
         '
         'mnOpenR4
         '
-        Me.mnOpenR4.Enabled = False
+        Me.mnOpenR4.Enabled = false
         Me.mnOpenR4.Name = "mnOpenR4"
         Me.mnOpenR4.Size = New System.Drawing.Size(199, 22)
         Me.mnOpenR4.Tag = "4"
@@ -2673,7 +2672,7 @@ Partial Class MainWindow
         '
         'mnUndo
         '
-        Me.mnUndo.Enabled = False
+        Me.mnUndo.Enabled = false
         Me.mnUndo.Image = Global.iBMSC.My.Resources.Resources.x16Undo
         Me.mnUndo.Name = "mnUndo"
         Me.mnUndo.ShortcutKeyDisplayString = "Ctrl+Z"
@@ -2682,7 +2681,7 @@ Partial Class MainWindow
         '
         'mnRedo
         '
-        Me.mnRedo.Enabled = False
+        Me.mnRedo.Enabled = false
         Me.mnRedo.Image = Global.iBMSC.My.Resources.Resources.x16Redo
         Me.mnRedo.Name = "mnRedo"
         Me.mnRedo.ShortcutKeyDisplayString = "Ctrl+Y"
@@ -2736,7 +2735,7 @@ Partial Class MainWindow
         'mnGotoMeasure
         '
         Me.mnGotoMeasure.Name = "mnGotoMeasure"
-        Me.mnGotoMeasure.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.G), System.Windows.Forms.Keys)
+        Me.mnGotoMeasure.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.G),System.Windows.Forms.Keys)
         Me.mnGotoMeasure.Size = New System.Drawing.Size(233, 22)
         Me.mnGotoMeasure.Text = "Go To Measure..."
         '
@@ -2768,7 +2767,7 @@ Partial Class MainWindow
         '
         'mnTimeSelect
         '
-        Me.mnTimeSelect.CheckOnClick = True
+        Me.mnTimeSelect.CheckOnClick = true
         Me.mnTimeSelect.Image = Global.iBMSC.My.Resources.Resources.x16TimeSelection
         Me.mnTimeSelect.Name = "mnTimeSelect"
         Me.mnTimeSelect.ShortcutKeys = System.Windows.Forms.Keys.F1
@@ -2777,8 +2776,8 @@ Partial Class MainWindow
         '
         'mnSelect
         '
-        Me.mnSelect.Checked = True
-        Me.mnSelect.CheckOnClick = True
+        Me.mnSelect.Checked = true
+        Me.mnSelect.CheckOnClick = true
         Me.mnSelect.CheckState = System.Windows.Forms.CheckState.Checked
         Me.mnSelect.Image = Global.iBMSC.My.Resources.Resources.x16Select
         Me.mnSelect.Name = "mnSelect"
@@ -2788,7 +2787,7 @@ Partial Class MainWindow
         '
         'mnWrite
         '
-        Me.mnWrite.CheckOnClick = True
+        Me.mnWrite.CheckOnClick = true
         Me.mnWrite.Image = Global.iBMSC.My.Resources.Resources.x16Pen
         Me.mnWrite.Name = "mnWrite"
         Me.mnWrite.ShortcutKeys = System.Windows.Forms.Keys.F3
@@ -2816,18 +2815,18 @@ Partial Class MainWindow
         '
         'mnSMenu
         '
-        Me.mnSMenu.Checked = True
-        Me.mnSMenu.CheckOnClick = True
+        Me.mnSMenu.Checked = true
+        Me.mnSMenu.CheckOnClick = true
         Me.mnSMenu.CheckState = System.Windows.Forms.CheckState.Checked
         Me.mnSMenu.Name = "mnSMenu"
         Me.mnSMenu.Size = New System.Drawing.Size(172, 22)
         Me.mnSMenu.Text = "&Main Menu"
-        Me.mnSMenu.Visible = False
+        Me.mnSMenu.Visible = false
         '
         'mnSTB
         '
-        Me.mnSTB.Checked = True
-        Me.mnSTB.CheckOnClick = True
+        Me.mnSTB.Checked = true
+        Me.mnSTB.CheckOnClick = true
         Me.mnSTB.CheckState = System.Windows.Forms.CheckState.Checked
         Me.mnSTB.Name = "mnSTB"
         Me.mnSTB.Size = New System.Drawing.Size(172, 22)
@@ -2835,8 +2834,8 @@ Partial Class MainWindow
         '
         'mnSOP
         '
-        Me.mnSOP.Checked = True
-        Me.mnSOP.CheckOnClick = True
+        Me.mnSOP.Checked = true
+        Me.mnSOP.CheckOnClick = true
         Me.mnSOP.CheckState = System.Windows.Forms.CheckState.Checked
         Me.mnSOP.Name = "mnSOP"
         Me.mnSOP.Size = New System.Drawing.Size(172, 22)
@@ -2844,8 +2843,8 @@ Partial Class MainWindow
         '
         'mnSStatus
         '
-        Me.mnSStatus.Checked = True
-        Me.mnSStatus.CheckOnClick = True
+        Me.mnSStatus.Checked = true
+        Me.mnSStatus.CheckOnClick = true
         Me.mnSStatus.CheckState = System.Windows.Forms.CheckState.Checked
         Me.mnSStatus.Name = "mnSStatus"
         Me.mnSStatus.Size = New System.Drawing.Size(172, 22)
@@ -2853,14 +2852,14 @@ Partial Class MainWindow
         '
         'mnSLSplitter
         '
-        Me.mnSLSplitter.CheckOnClick = True
+        Me.mnSLSplitter.CheckOnClick = true
         Me.mnSLSplitter.Name = "mnSLSplitter"
         Me.mnSLSplitter.Size = New System.Drawing.Size(172, 22)
         Me.mnSLSplitter.Text = "&Left Splitter"
         '
         'mnSRSplitter
         '
-        Me.mnSRSplitter.CheckOnClick = True
+        Me.mnSRSplitter.CheckOnClick = true
         Me.mnSRSplitter.Name = "mnSRSplitter"
         Me.mnSRSplitter.Size = New System.Drawing.Size(172, 22)
         Me.mnSRSplitter.Text = "&Right Splitter"
@@ -2872,8 +2871,8 @@ Partial Class MainWindow
         '
         'CGShow
         '
-        Me.CGShow.Checked = True
-        Me.CGShow.CheckOnClick = True
+        Me.CGShow.Checked = true
+        Me.CGShow.CheckOnClick = true
         Me.CGShow.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CGShow.Name = "CGShow"
         Me.CGShow.Size = New System.Drawing.Size(172, 22)
@@ -2881,8 +2880,8 @@ Partial Class MainWindow
         '
         'CGShowS
         '
-        Me.CGShowS.Checked = True
-        Me.CGShowS.CheckOnClick = True
+        Me.CGShowS.Checked = true
+        Me.CGShowS.CheckOnClick = true
         Me.CGShowS.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CGShowS.Name = "CGShowS"
         Me.CGShowS.Size = New System.Drawing.Size(172, 22)
@@ -2890,8 +2889,8 @@ Partial Class MainWindow
         '
         'CGShowBG
         '
-        Me.CGShowBG.Checked = True
-        Me.CGShowBG.CheckOnClick = True
+        Me.CGShowBG.Checked = true
+        Me.CGShowBG.CheckOnClick = true
         Me.CGShowBG.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CGShowBG.Name = "CGShowBG"
         Me.CGShowBG.Size = New System.Drawing.Size(172, 22)
@@ -2899,8 +2898,8 @@ Partial Class MainWindow
         '
         'CGShowM
         '
-        Me.CGShowM.Checked = True
-        Me.CGShowM.CheckOnClick = True
+        Me.CGShowM.Checked = true
+        Me.CGShowM.CheckOnClick = true
         Me.CGShowM.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CGShowM.Name = "CGShowM"
         Me.CGShowM.Size = New System.Drawing.Size(172, 22)
@@ -2908,8 +2907,8 @@ Partial Class MainWindow
         '
         'CGShowMB
         '
-        Me.CGShowMB.Checked = True
-        Me.CGShowMB.CheckOnClick = True
+        Me.CGShowMB.Checked = true
+        Me.CGShowMB.CheckOnClick = true
         Me.CGShowMB.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CGShowMB.Name = "CGShowMB"
         Me.CGShowMB.Size = New System.Drawing.Size(172, 22)
@@ -2917,8 +2916,8 @@ Partial Class MainWindow
         '
         'CGShowV
         '
-        Me.CGShowV.Checked = True
-        Me.CGShowV.CheckOnClick = True
+        Me.CGShowV.Checked = true
+        Me.CGShowV.CheckOnClick = true
         Me.CGShowV.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CGShowV.Name = "CGShowV"
         Me.CGShowV.Size = New System.Drawing.Size(172, 22)
@@ -2926,8 +2925,8 @@ Partial Class MainWindow
         '
         'CGShowC
         '
-        Me.CGShowC.Checked = True
-        Me.CGShowC.CheckOnClick = True
+        Me.CGShowC.Checked = true
+        Me.CGShowC.CheckOnClick = true
         Me.CGShowC.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CGShowC.Name = "CGShowC"
         Me.CGShowC.Size = New System.Drawing.Size(172, 22)
@@ -2940,8 +2939,8 @@ Partial Class MainWindow
         '
         'CGBPM
         '
-        Me.CGBPM.Checked = True
-        Me.CGBPM.CheckOnClick = True
+        Me.CGBPM.Checked = true
+        Me.CGBPM.CheckOnClick = true
         Me.CGBPM.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CGBPM.Name = "CGBPM"
         Me.CGBPM.Size = New System.Drawing.Size(172, 22)
@@ -2949,8 +2948,8 @@ Partial Class MainWindow
         '
         'CGSTOP
         '
-        Me.CGSTOP.Checked = True
-        Me.CGSTOP.CheckOnClick = True
+        Me.CGSTOP.Checked = true
+        Me.CGSTOP.CheckOnClick = true
         Me.CGSTOP.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CGSTOP.Name = "CGSTOP"
         Me.CGSTOP.Size = New System.Drawing.Size(172, 22)
@@ -2958,8 +2957,8 @@ Partial Class MainWindow
         '
         'CGSCROLL
         '
-        Me.CGSCROLL.Checked = True
-        Me.CGSCROLL.CheckOnClick = True
+        Me.CGSCROLL.Checked = true
+        Me.CGSCROLL.CheckOnClick = true
         Me.CGSCROLL.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CGSCROLL.Name = "CGSCROLL"
         Me.CGSCROLL.Size = New System.Drawing.Size(172, 22)
@@ -2967,23 +2966,24 @@ Partial Class MainWindow
         '
         'CGBLP
         '
-        Me.CGBLP.Checked = True
-        Me.CGBLP.CheckOnClick = True
+        Me.CGBLP.Checked = true
+        Me.CGBLP.CheckOnClick = true
+        Me.CGBLP.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CGBLP.Name = "CGBLP"
         Me.CGBLP.Size = New System.Drawing.Size(172, 22)
         Me.CGBLP.Text = "BGA / Layer / Poor"
         '
         'mnOptions
         '
-        Me.mnOptions.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnNTInput, Me.mnErrorCheck, Me.mnPreviewOnClick, Me.mnShowFileName, Me.ToolStripSeparator20, Me.mnGOptions, Me.mnVOptions, Me.mnPOptions, Me.mnLanguage, Me.mnTheme})
+        Me.mnOptions.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnNTInput, Me.mnErrorCheck, Me.mnPreviewOnClick, Me.ToolStripSeparator20, Me.mnGOptions, Me.mnVOptions, Me.mnPOptions, Me.mnLanguage, Me.mnTheme})
         Me.mnOptions.Name = "mnOptions"
         Me.mnOptions.Size = New System.Drawing.Size(61, 19)
         Me.mnOptions.Text = "&Options"
         '
         'mnNTInput
         '
-        Me.mnNTInput.Checked = True
-        Me.mnNTInput.CheckOnClick = True
+        Me.mnNTInput.Checked = true
+        Me.mnNTInput.CheckOnClick = true
         Me.mnNTInput.CheckState = System.Windows.Forms.CheckState.Checked
         Me.mnNTInput.Image = Global.iBMSC.My.Resources.Resources.x16NTInput
         Me.mnNTInput.Name = "mnNTInput"
@@ -2993,8 +2993,8 @@ Partial Class MainWindow
         '
         'mnErrorCheck
         '
-        Me.mnErrorCheck.Checked = True
-        Me.mnErrorCheck.CheckOnClick = True
+        Me.mnErrorCheck.Checked = true
+        Me.mnErrorCheck.CheckOnClick = true
         Me.mnErrorCheck.CheckState = System.Windows.Forms.CheckState.Checked
         Me.mnErrorCheck.Image = Global.iBMSC.My.Resources.Resources.x16CheckError
         Me.mnErrorCheck.Name = "mnErrorCheck"
@@ -3003,21 +3003,13 @@ Partial Class MainWindow
         '
         'mnPreviewOnClick
         '
-        Me.mnPreviewOnClick.Checked = True
-        Me.mnPreviewOnClick.CheckOnClick = True
+        Me.mnPreviewOnClick.Checked = true
+        Me.mnPreviewOnClick.CheckOnClick = true
         Me.mnPreviewOnClick.CheckState = System.Windows.Forms.CheckState.Checked
         Me.mnPreviewOnClick.Image = Global.iBMSC.My.Resources.Resources.x16PreviewOnClick
         Me.mnPreviewOnClick.Name = "mnPreviewOnClick"
         Me.mnPreviewOnClick.Size = New System.Drawing.Size(229, 22)
         Me.mnPreviewOnClick.Text = "Preview on &Click"
-        '
-        'mnShowFileName
-        '
-        Me.mnShowFileName.CheckOnClick = True
-        Me.mnShowFileName.Image = Global.iBMSC.My.Resources.Resources.x16ShowFileNameN
-        Me.mnShowFileName.Name = "mnShowFileName"
-        Me.mnShowFileName.Size = New System.Drawing.Size(229, 22)
-        Me.mnShowFileName.Text = "Show &File Name on Notes"
         '
         'ToolStripSeparator20
         '
@@ -3056,12 +3048,12 @@ Partial Class MainWindow
         '
         Me.cmnConversion.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.POBLong, Me.POBShort, Me.POBLongShort, Me.ToolStripSeparator10, Me.POBHidden, Me.POBVisible, Me.POBHiddenVisible, Me.ToolStripSeparator11, Me.POBModify, Me.POBMirror})
         Me.cmnConversion.Name = "cmnLanguage"
-        Me.cmnConversion.OwnerItem = Me.POConvert
+        Me.cmnConversion.OwnerItem = Me.mnConversion
         Me.cmnConversion.Size = New System.Drawing.Size(222, 192)
         '
         'POBLong
         '
-        Me.POBLong.Enabled = False
+        Me.POBLong.Enabled = false
         Me.POBLong.Image = Global.iBMSC.My.Resources.Resources.ConvertNotesL
         Me.POBLong.Name = "POBLong"
         Me.POBLong.Size = New System.Drawing.Size(221, 22)
@@ -3076,7 +3068,7 @@ Partial Class MainWindow
         '
         'POBLongShort
         '
-        Me.POBLongShort.Enabled = False
+        Me.POBLongShort.Enabled = false
         Me.POBLongShort.Image = Global.iBMSC.My.Resources.Resources.ConvertNotes
         Me.POBLongShort.Name = "POBLongShort"
         Me.POBLongShort.Size = New System.Drawing.Size(221, 22)
@@ -3127,6 +3119,16 @@ Partial Class MainWindow
         Me.POBMirror.Size = New System.Drawing.Size(221, 22)
         Me.POBMirror.Text = "Mi&rror"
         '
+        'POConvert
+        '
+        Me.POConvert.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.POConvert.DropDown = Me.cmnConversion
+        Me.POConvert.Image = Global.iBMSC.My.Resources.Resources.ConvertNotes
+        Me.POConvert.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.POConvert.Name = "POConvert"
+        Me.POConvert.Size = New System.Drawing.Size(29, 22)
+        Me.POConvert.Text = "Convert Notes"
+        '
         'mnPreview
         '
         Me.mnPreview.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnPlayB, Me.mnPlay, Me.mnStop})
@@ -3158,16 +3160,6 @@ Partial Class MainWindow
         Me.mnStop.Size = New System.Drawing.Size(201, 22)
         Me.mnStop.Text = "&Stop"
         '
-        'POConvert
-        '
-        Me.POConvert.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.POConvert.DropDown = Me.cmnConversion
-        Me.POConvert.Image = Global.iBMSC.My.Resources.Resources.ConvertNotes
-        Me.POConvert.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.POConvert.Name = "POConvert"
-        Me.POConvert.Size = New System.Drawing.Size(29, 22)
-        Me.POConvert.Text = "Convert Notes"
-        '
         'TBMain
         '
         Me.TBMain.AccessibleRole = System.Windows.Forms.AccessibleRole.ToolBar
@@ -3176,7 +3168,7 @@ Partial Class MainWindow
         Me.TBMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TBNew, Me.TBOpen, Me.TBSave, Me.ToolStripSeparator1, Me.TBCut, Me.TBCopy, Me.TBPaste, Me.TBFind, Me.ToolStripSeparator24, Me.TBStatistics, Me.POConvert, Me.TBMyO2, Me.ToolStripSeparator4, Me.TBErrorCheck, Me.TBPreviewOnClick, Me.TBShowFileName, Me.ToolStripSeparator8, Me.TBNTInput, Me.TBWavIncrease, Me.ToolStripSeparator2, Me.TBUndo, Me.TBRedo, Me.ToolStripSeparator5, Me.TBTimeSelect, Me.TBSelect, Me.TBWrite, Me.ToolStripSeparator3, Me.TBPlayB, Me.TBPlay, Me.TBStop, Me.TBPOptions, Me.ToolStripSeparator7, Me.TBVOptions, Me.TBGOptions, Me.TBLanguage, Me.TBTheme, Me.POBStorm})
         Me.TBMain.Location = New System.Drawing.Point(3, 23)
         Me.TBMain.Name = "TBMain"
-        Me.TBMain.Size = New System.Drawing.Size(805, 25)
+        Me.TBMain.Size = New System.Drawing.Size(751, 25)
         Me.TBMain.TabIndex = 64
         Me.TBMain.Text = "Main Toolbar"
         '
@@ -3201,7 +3193,7 @@ Partial Class MainWindow
         '
         'TBOpenR0
         '
-        Me.TBOpenR0.Enabled = False
+        Me.TBOpenR0.Enabled = false
         Me.TBOpenR0.Name = "TBOpenR0"
         Me.TBOpenR0.Size = New System.Drawing.Size(199, 22)
         Me.TBOpenR0.Tag = "0"
@@ -3209,7 +3201,7 @@ Partial Class MainWindow
         '
         'TBOpenR1
         '
-        Me.TBOpenR1.Enabled = False
+        Me.TBOpenR1.Enabled = false
         Me.TBOpenR1.Name = "TBOpenR1"
         Me.TBOpenR1.Size = New System.Drawing.Size(199, 22)
         Me.TBOpenR1.Tag = "1"
@@ -3217,7 +3209,7 @@ Partial Class MainWindow
         '
         'TBOpenR2
         '
-        Me.TBOpenR2.Enabled = False
+        Me.TBOpenR2.Enabled = false
         Me.TBOpenR2.Name = "TBOpenR2"
         Me.TBOpenR2.Size = New System.Drawing.Size(199, 22)
         Me.TBOpenR2.Tag = "2"
@@ -3225,7 +3217,7 @@ Partial Class MainWindow
         '
         'TBOpenR3
         '
-        Me.TBOpenR3.Enabled = False
+        Me.TBOpenR3.Enabled = false
         Me.TBOpenR3.Name = "TBOpenR3"
         Me.TBOpenR3.Size = New System.Drawing.Size(199, 22)
         Me.TBOpenR3.Tag = "3"
@@ -3233,7 +3225,7 @@ Partial Class MainWindow
         '
         'TBOpenR4
         '
-        Me.TBOpenR4.Enabled = False
+        Me.TBOpenR4.Enabled = false
         Me.TBOpenR4.Name = "TBOpenR4"
         Me.TBOpenR4.Size = New System.Drawing.Size(199, 22)
         Me.TBOpenR4.Tag = "4"
@@ -3330,7 +3322,7 @@ Partial Class MainWindow
         '
         'TBStatistics
         '
-        Me.TBStatistics.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.TBStatistics.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold)
         Me.TBStatistics.Image = Global.iBMSC.My.Resources.Resources.x16Statistics
         Me.TBStatistics.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.TBStatistics.Name = "TBStatistics"
@@ -3354,8 +3346,8 @@ Partial Class MainWindow
         '
         'TBErrorCheck
         '
-        Me.TBErrorCheck.Checked = True
-        Me.TBErrorCheck.CheckOnClick = True
+        Me.TBErrorCheck.Checked = true
+        Me.TBErrorCheck.CheckOnClick = true
         Me.TBErrorCheck.CheckState = System.Windows.Forms.CheckState.Checked
         Me.TBErrorCheck.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.TBErrorCheck.Image = Global.iBMSC.My.Resources.Resources.x16CheckError
@@ -3366,8 +3358,8 @@ Partial Class MainWindow
         '
         'TBPreviewOnClick
         '
-        Me.TBPreviewOnClick.Checked = True
-        Me.TBPreviewOnClick.CheckOnClick = True
+        Me.TBPreviewOnClick.Checked = true
+        Me.TBPreviewOnClick.CheckOnClick = true
         Me.TBPreviewOnClick.CheckState = System.Windows.Forms.CheckState.Checked
         Me.TBPreviewOnClick.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.TBPreviewOnClick.Image = Global.iBMSC.My.Resources.Resources.x16PreviewOnClick
@@ -3378,7 +3370,7 @@ Partial Class MainWindow
         '
         'TBShowFileName
         '
-        Me.TBShowFileName.CheckOnClick = True
+        Me.TBShowFileName.CheckOnClick = true
         Me.TBShowFileName.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.TBShowFileName.Image = Global.iBMSC.My.Resources.Resources.x16ShowFileNameN
         Me.TBShowFileName.ImageTransparentColor = System.Drawing.Color.Magenta
@@ -3393,8 +3385,8 @@ Partial Class MainWindow
         '
         'TBNTInput
         '
-        Me.TBNTInput.Checked = True
-        Me.TBNTInput.CheckOnClick = True
+        Me.TBNTInput.Checked = true
+        Me.TBNTInput.CheckOnClick = true
         Me.TBNTInput.CheckState = System.Windows.Forms.CheckState.Checked
         Me.TBNTInput.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.TBNTInput.Image = Global.iBMSC.My.Resources.Resources.x16NTInput
@@ -3406,7 +3398,7 @@ Partial Class MainWindow
         'TBWavIncrease
         '
         Me.TBWavIncrease.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.TBWavIncrease.Image = CType(resources.GetObject("TBWavIncrease.Image"), System.Drawing.Image)
+        Me.TBWavIncrease.Image = CType(resources.GetObject("TBWavIncrease.Image"),System.Drawing.Image)
         Me.TBWavIncrease.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.TBWavIncrease.Name = "TBWavIncrease"
         Me.TBWavIncrease.Size = New System.Drawing.Size(23, 22)
@@ -3420,7 +3412,7 @@ Partial Class MainWindow
         'TBUndo
         '
         Me.TBUndo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.TBUndo.Enabled = False
+        Me.TBUndo.Enabled = false
         Me.TBUndo.Image = Global.iBMSC.My.Resources.Resources.x16Undo
         Me.TBUndo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.TBUndo.Name = "TBUndo"
@@ -3430,7 +3422,7 @@ Partial Class MainWindow
         'TBRedo
         '
         Me.TBRedo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.TBRedo.Enabled = False
+        Me.TBRedo.Enabled = false
         Me.TBRedo.Image = Global.iBMSC.My.Resources.Resources.x16Redo
         Me.TBRedo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.TBRedo.Name = "TBRedo"
@@ -3453,7 +3445,7 @@ Partial Class MainWindow
         '
         'TBSelect
         '
-        Me.TBSelect.Checked = True
+        Me.TBSelect.Checked = true
         Me.TBSelect.CheckState = System.Windows.Forms.CheckState.Checked
         Me.TBSelect.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.TBSelect.Image = Global.iBMSC.My.Resources.Resources.x16Select
@@ -3543,11 +3535,11 @@ Partial Class MainWindow
         Me.POBStorm.Name = "POBStorm"
         Me.POBStorm.Size = New System.Drawing.Size(23, 22)
         Me.POBStorm.Text = "Storm"
-        Me.POBStorm.Visible = False
+        Me.POBStorm.Visible = false
         '
         'pStatus
         '
-        Me.pStatus.AutoSize = True
+        Me.pStatus.AutoSize = true
         Me.pStatus.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.pStatus.Controls.Add(Me.FStatus2)
         Me.pStatus.Controls.Add(Me.FStatus)
@@ -3563,16 +3555,16 @@ Partial Class MainWindow
         Me.FStatus2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FSSS, Me.FSSL, Me.FSSH, Me.BVCReverse, Me.LblMultiply, Me.TVCM, Me.LblDivide, Me.TVCD, Me.BVCApply, Me.TVCBPM, Me.BVCCalculate, Me.BConvertStop})
         Me.FStatus2.Location = New System.Drawing.Point(0, 0)
         Me.FStatus2.Name = "FStatus2"
-        Me.FStatus2.ShowItemToolTips = True
+        Me.FStatus2.ShowItemToolTips = true
         Me.FStatus2.Size = New System.Drawing.Size(876, 22)
         Me.FStatus2.TabIndex = 0
         Me.FStatus2.Text = "Status"
-        Me.FStatus2.Visible = False
+        Me.FStatus2.Visible = false
         '
         'FSSS
         '
         Me.FSSS.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.FSSS.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.FSSS.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold)
         Me.FSSS.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.FSSS.Name = "FSSS"
         Me.FSSS.Size = New System.Drawing.Size(23, 20)
@@ -3582,7 +3574,7 @@ Partial Class MainWindow
         'FSSL
         '
         Me.FSSL.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.FSSL.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.FSSL.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold)
         Me.FSSL.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.FSSL.Name = "FSSL"
         Me.FSSL.Size = New System.Drawing.Size(23, 20)
@@ -3592,7 +3584,7 @@ Partial Class MainWindow
         'FSSH
         '
         Me.FSSH.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.FSSH.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.FSSH.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold)
         Me.FSSH.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.FSSH.Name = "FSSH"
         Me.FSSH.Size = New System.Drawing.Size(23, 20)
@@ -3601,7 +3593,7 @@ Partial Class MainWindow
         '
         'BVCReverse
         '
-        Me.BVCReverse.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BVCReverse.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.BVCReverse.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.BVCReverse.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BVCReverse.Name = "BVCReverse"
@@ -3616,9 +3608,9 @@ Partial Class MainWindow
         '
         'TVCM
         '
-        Me.TVCM.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TVCM.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(192,Byte),Integer))
         Me.TVCM.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TVCM.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.TVCM.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold)
         Me.TVCM.Name = "TVCM"
         Me.TVCM.Size = New System.Drawing.Size(60, 22)
         Me.TVCM.Text = "2"
@@ -3632,9 +3624,9 @@ Partial Class MainWindow
         '
         'TVCD
         '
-        Me.TVCD.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TVCD.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(192,Byte),Integer))
         Me.TVCD.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TVCD.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.TVCD.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold)
         Me.TVCD.Name = "TVCD"
         Me.TVCD.Size = New System.Drawing.Size(60, 22)
         Me.TVCD.Text = "1"
@@ -3642,20 +3634,20 @@ Partial Class MainWindow
         '
         'BVCApply
         '
-        Me.BVCApply.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BVCApply.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.BVCApply.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.BVCApply.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BVCApply.Name = "BVCApply"
         Me.BVCApply.Size = New System.Drawing.Size(95, 20)
         Me.BVCApply.Text = "Expand By Ratio"
-        Me.BVCApply.ToolTipText = "This will expand notes and selection by the ratio next to this button. Ignores ce" &
+        Me.BVCApply.ToolTipText = "This will expand notes and selection by the ratio next to this button. Ignores ce"& _ 
     "nter bar."
         '
         'TVCBPM
         '
-        Me.TVCBPM.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TVCBPM.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(192,Byte),Integer))
         Me.TVCBPM.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TVCBPM.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.TVCBPM.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold)
         Me.TVCBPM.Name = "TVCBPM"
         Me.TVCBPM.Size = New System.Drawing.Size(80, 22)
         Me.TVCBPM.Text = "120"
@@ -3663,24 +3655,24 @@ Partial Class MainWindow
         '
         'BVCCalculate
         '
-        Me.BVCCalculate.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BVCCalculate.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.BVCCalculate.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.BVCCalculate.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BVCCalculate.Name = "BVCCalculate"
-        Me.BVCCalculate.Size = New System.Drawing.Size(104, 20)
+        Me.BVCCalculate.Size = New System.Drawing.Size(103, 20)
         Me.BVCCalculate.Text = "Relocate By Value"
-        Me.BVCCalculate.ToolTipText = "This will move notes within the selection and preserve the selection, given the B" &
+        Me.BVCCalculate.ToolTipText = "This will move notes within the selection and preserve the selection, given the B"& _ 
     "PM value next to this button. Considers center bar."
         '
         'BConvertStop
         '
-        Me.BConvertStop.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BConvertStop.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.BConvertStop.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.BConvertStop.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BConvertStop.Name = "BConvertStop"
-        Me.BConvertStop.Size = New System.Drawing.Size(117, 20)
+        Me.BConvertStop.Size = New System.Drawing.Size(116, 20)
         Me.BConvertStop.Text = "Transform Into Stop"
-        Me.BConvertStop.ToolTipText = "This will move notes within the selection and preserve the selection, given the B" &
+        Me.BConvertStop.ToolTipText = "This will move notes within the selection and preserve the selection, given the B"& _ 
     "PM value next to this button. Considers center bar."
         '
         'FStatus
@@ -3689,15 +3681,15 @@ Partial Class MainWindow
         Me.FStatus.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FSC, Me.FSW, Me.FSM, Me.FSP1, Me.FSP3, Me.FSP2, Me.FSP4, Me.TimeStatusLabel, Me.FST, Me.FSH, Me.FSE})
         Me.FStatus.Location = New System.Drawing.Point(0, 0)
         Me.FStatus.Name = "FStatus"
-        Me.FStatus.ShowItemToolTips = True
+        Me.FStatus.ShowItemToolTips = true
         Me.FStatus.Size = New System.Drawing.Size(876, 22)
-        Me.FStatus.SizingGrip = False
+        Me.FStatus.SizingGrip = false
         Me.FStatus.TabIndex = 62
         Me.FStatus.Text = "Status"
         '
         'FSC
         '
-        Me.FSC.AutoSize = False
+        Me.FSC.AutoSize = false
         Me.FSC.Name = "FSC"
         Me.FSC.Size = New System.Drawing.Size(70, 17)
         Me.FSC.Text = "BPM"
@@ -3705,8 +3697,8 @@ Partial Class MainWindow
         '
         'FSW
         '
-        Me.FSW.AutoSize = False
-        Me.FSW.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.FSW.AutoSize = false
+        Me.FSW.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(64,Byte),Integer), CType(CType(0,Byte),Integer))
         Me.FSW.Name = "FSW"
         Me.FSW.Size = New System.Drawing.Size(40, 17)
         Me.FSW.Text = "01"
@@ -3714,7 +3706,7 @@ Partial Class MainWindow
         '
         'FSM
         '
-        Me.FSM.AutoSize = False
+        Me.FSM.AutoSize = false
         Me.FSM.ForeColor = System.Drawing.Color.Teal
         Me.FSM.Name = "FSM"
         Me.FSM.Size = New System.Drawing.Size(40, 17)
@@ -3723,8 +3715,8 @@ Partial Class MainWindow
         '
         'FSP1
         '
-        Me.FSP1.AutoSize = False
-        Me.FSP1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.FSP1.AutoSize = false
+        Me.FSP1.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold)
         Me.FSP1.Name = "FSP1"
         Me.FSP1.Size = New System.Drawing.Size(170, 17)
         Me.FSP1.Text = "9.41176470588235 / 9999"
@@ -3732,8 +3724,8 @@ Partial Class MainWindow
         '
         'FSP3
         '
-        Me.FSP3.AutoSize = False
-        Me.FSP3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.FSP3.AutoSize = false
+        Me.FSP3.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold)
         Me.FSP3.ForeColor = System.Drawing.Color.Maroon
         Me.FSP3.Name = "FSP3"
         Me.FSP3.Size = New System.Drawing.Size(85, 17)
@@ -3742,8 +3734,8 @@ Partial Class MainWindow
         '
         'FSP2
         '
-        Me.FSP2.AutoSize = False
-        Me.FSP2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.FSP2.AutoSize = false
+        Me.FSP2.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Bold)
         Me.FSP2.ForeColor = System.Drawing.Color.Green
         Me.FSP2.Name = "FSP2"
         Me.FSP2.Size = New System.Drawing.Size(170, 17)
@@ -3752,7 +3744,7 @@ Partial Class MainWindow
         '
         'FSP4
         '
-        Me.FSP4.AutoSize = False
+        Me.FSP4.AutoSize = false
         Me.FSP4.Name = "FSP4"
         Me.FSP4.Size = New System.Drawing.Size(115, 17)
         Me.FSP4.Text = "112.941176470588"
@@ -3767,7 +3759,7 @@ Partial Class MainWindow
         'FST
         '
         Me.FST.ForeColor = System.Drawing.Color.Olive
-        Me.FST.LinkColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.FST.LinkColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.FST.Name = "FST"
         Me.FST.Size = New System.Drawing.Size(64, 17)
         Me.FST.Text = "Length = 0"
@@ -3820,7 +3812,7 @@ Partial Class MainWindow
         Me.PMain.Controls.Add(Me.MainPanelScroll)
         Me.PMain.Controls.Add(Me.HS)
         Me.PMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PMain.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PMain.Font = New System.Drawing.Font("Verdana", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.PMain.ForeColor = System.Drawing.Color.White
         Me.PMain.Location = New System.Drawing.Point(5, 0)
         Me.PMain.Name = "PMain"
@@ -3832,13 +3824,13 @@ Partial Class MainWindow
         '
         Me.PMainIn.BackColor = System.Drawing.Color.Black
         Me.PMainIn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PMainIn.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PMainIn.Font = New System.Drawing.Font("Verdana", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.PMainIn.ForeColor = System.Drawing.Color.White
         Me.PMainIn.Location = New System.Drawing.Point(0, 0)
         Me.PMainIn.Name = "PMainIn"
         Me.PMainIn.Size = New System.Drawing.Size(849, 643)
         Me.PMainIn.TabIndex = 0
-        Me.PMainIn.TabStop = True
+        Me.PMainIn.TabStop = true
         Me.PMainIn.Tag = "1"
         '
         'MainPanelScroll
@@ -3876,9 +3868,9 @@ Partial Class MainWindow
         Me.SpR.Name = "SpR"
         Me.SpR.Size = New System.Drawing.Size(5, 660)
         Me.SpR.TabIndex = 59
-        Me.SpR.TabStop = False
-        Me.SpR.UseVisualStyleBackColor = True
-        Me.SpR.Visible = False
+        Me.SpR.TabStop = false
+        Me.SpR.UseVisualStyleBackColor = true
+        Me.SpR.Visible = false
         '
         'SpL
         '
@@ -3889,9 +3881,9 @@ Partial Class MainWindow
         Me.SpL.Name = "SpL"
         Me.SpL.Size = New System.Drawing.Size(5, 660)
         Me.SpL.TabIndex = 60
-        Me.SpL.TabStop = False
-        Me.SpL.UseVisualStyleBackColor = True
-        Me.SpL.Visible = False
+        Me.SpL.TabStop = false
+        Me.SpL.UseVisualStyleBackColor = true
+        Me.SpL.Visible = false
         '
         'PMainR
         '
@@ -3900,7 +3892,7 @@ Partial Class MainWindow
         Me.PMainR.Controls.Add(Me.RightPanelScroll)
         Me.PMainR.Controls.Add(Me.HSR)
         Me.PMainR.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PMainR.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PMainR.Font = New System.Drawing.Font("Verdana", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.PMainR.ForeColor = System.Drawing.Color.White
         Me.PMainR.Location = New System.Drawing.Point(876, 0)
         Me.PMainR.Name = "PMainR"
@@ -3912,13 +3904,13 @@ Partial Class MainWindow
         '
         Me.PMainInR.BackColor = System.Drawing.Color.Black
         Me.PMainInR.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PMainInR.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PMainInR.Font = New System.Drawing.Font("Verdana", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.PMainInR.ForeColor = System.Drawing.Color.White
         Me.PMainInR.Location = New System.Drawing.Point(0, 0)
         Me.PMainInR.Name = "PMainInR"
         Me.PMainInR.Size = New System.Drawing.Size(0, 643)
         Me.PMainInR.TabIndex = 0
-        Me.PMainInR.TabStop = True
+        Me.PMainInR.TabStop = true
         Me.PMainInR.Tag = "2"
         '
         'RightPanelScroll
@@ -3952,7 +3944,7 @@ Partial Class MainWindow
         Me.PMainL.Controls.Add(Me.LeftPanelScroll)
         Me.PMainL.Controls.Add(Me.HSL)
         Me.PMainL.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PMainL.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PMainL.Font = New System.Drawing.Font("Verdana", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.PMainL.ForeColor = System.Drawing.Color.White
         Me.PMainL.Location = New System.Drawing.Point(0, 0)
         Me.PMainL.Name = "PMainL"
@@ -3964,13 +3956,13 @@ Partial Class MainWindow
         '
         Me.PMainInL.BackColor = System.Drawing.Color.Black
         Me.PMainInL.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PMainInL.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PMainInL.Font = New System.Drawing.Font("Verdana", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.PMainInL.ForeColor = System.Drawing.Color.White
         Me.PMainInL.Location = New System.Drawing.Point(0, 0)
         Me.PMainInL.Name = "PMainInL"
         Me.PMainInL.Size = New System.Drawing.Size(0, 643)
         Me.PMainInL.TabIndex = 0
-        Me.PMainInL.TabStop = True
+        Me.PMainInL.TabStop = true
         Me.PMainInL.Tag = "0"
         '
         'LeftPanelScroll
@@ -3999,7 +3991,7 @@ Partial Class MainWindow
         '
         'POptionsResizer
         '
-        Me.POptionsResizer.AutoSize = True
+        Me.POptionsResizer.AutoSize = true
         Me.POptionsResizer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.POptionsResizer.Dock = System.Windows.Forms.DockStyle.Right
         Me.POptionsResizer.FlatAppearance.BorderSize = 0
@@ -4008,139 +4000,139 @@ Partial Class MainWindow
         Me.POptionsResizer.Name = "POptionsResizer"
         Me.POptionsResizer.Size = New System.Drawing.Size(6, 730)
         Me.POptionsResizer.TabIndex = 67
-        Me.POptionsResizer.TabStop = False
-        Me.POptionsResizer.UseVisualStyleBackColor = True
+        Me.POptionsResizer.TabStop = false
+        Me.POptionsResizer.UseVisualStyleBackColor = true
         '
         'MainWindow
         '
-        Me.AllowDrop = True
+        Me.AllowDrop = true
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(1082, 730)
         Me.Controls.Add(Me.ToolStripContainer1)
         Me.Controls.Add(Me.pStatus)
         Me.Controls.Add(Me.POptionsResizer)
         Me.Controls.Add(Me.POptionsScroll)
-        Me.DoubleBuffered = True
-        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.KeyPreview = True
+        Me.DoubleBuffered = true
+        Me.Font = New System.Drawing.Font("Segoe UI", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
+        Me.KeyPreview = true
         Me.MainMenuStrip = Me.mnMain
         Me.Name = "MainWindow"
-        Me.cmnLanguage.ResumeLayout(False)
-        Me.cmnTheme.ResumeLayout(False)
-        Me.POptionsScroll.ResumeLayout(False)
-        Me.POptionsScroll.PerformLayout()
-        Me.POptions.ResumeLayout(False)
-        Me.POptions.PerformLayout()
-        Me.POExpansion.ResumeLayout(False)
-        Me.POExpansionInner.ResumeLayout(False)
-        Me.POExpansionInner.PerformLayout()
-        Me.POBeat.ResumeLayout(False)
-        Me.POBeatInner.ResumeLayout(False)
-        Me.POBeatInner.PerformLayout()
-        Me.TableLayoutPanel7.ResumeLayout(False)
-        Me.TableLayoutPanel7.PerformLayout()
-        CType(Me.nBeatD, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.nBeatN, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.POBeatPart2.ResumeLayout(False)
-        Me.POBeatPart2.PerformLayout()
-        Me.POWAV.ResumeLayout(False)
-        Me.POWAVInner.ResumeLayout(False)
-        Me.POWAVInner.PerformLayout()
-        Me.FlowLayoutPanel3.ResumeLayout(False)
-        Me.POWAVPart2.ResumeLayout(False)
-        Me.POWAVPart2.PerformLayout()
-        Me.POWaveForm.ResumeLayout(False)
-        Me.POWaveForm.PerformLayout()
-        Me.POWaveFormInner.ResumeLayout(False)
-        Me.POWaveFormInner.PerformLayout()
-        Me.POWaveFormPart2.ResumeLayout(False)
-        Me.POWaveFormPart2.PerformLayout()
-        CType(Me.TWSaturation, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TWTransparency, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TWPrecision, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TWWidth, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TWLeft, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TWSaturation2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TWLeft2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TWTransparency2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TWWidth2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TWPrecision2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.POWaveFormPart1.ResumeLayout(False)
-        Me.POWaveFormPart1.PerformLayout()
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel1.PerformLayout()
-        Me.FlowLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel6.ResumeLayout(False)
-        Me.TableLayoutPanel6.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TWPosition2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TWPosition, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.POGrid.ResumeLayout(False)
-        Me.POGrid.PerformLayout()
-        Me.POGridInner.ResumeLayout(False)
-        Me.POGridInner.PerformLayout()
-        Me.POGridPart2.ResumeLayout(False)
-        Me.POGridPart2.PerformLayout()
-        Me.TableLayoutPanel5.ResumeLayout(False)
-        Me.TableLayoutPanel5.PerformLayout()
-        Me.FlowLayoutPanel2.ResumeLayout(False)
-        Me.TableLayoutPanel4.ResumeLayout(False)
-        Me.TableLayoutPanel4.PerformLayout()
-        CType(Me.CGB, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.POGridPart1.ResumeLayout(False)
-        Me.POGridPart1.PerformLayout()
-        Me.TableLayoutPanel3.ResumeLayout(False)
-        Me.TableLayoutPanel3.PerformLayout()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CGHeight2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CGHeight, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CGWidth2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CGWidth, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TableLayoutPanel2.ResumeLayout(False)
-        Me.TableLayoutPanel2.PerformLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CGDivide, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CGSub, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.POHeader.ResumeLayout(False)
-        Me.POHeader.PerformLayout()
-        Me.POHeaderInner.ResumeLayout(False)
-        Me.POHeaderInner.PerformLayout()
-        Me.POHeaderPart2.ResumeLayout(False)
-        Me.POHeaderPart2.PerformLayout()
-        Me.POHeaderPart1.ResumeLayout(False)
-        Me.POHeaderPart1.PerformLayout()
-        CType(Me.THBPM, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Menu1.ResumeLayout(False)
-        Me.mnMain.ResumeLayout(False)
-        Me.mnMain.PerformLayout()
-        Me.cmnConversion.ResumeLayout(False)
-        Me.TBMain.ResumeLayout(False)
-        Me.TBMain.PerformLayout()
-        Me.pStatus.ResumeLayout(False)
-        Me.pStatus.PerformLayout()
-        Me.FStatus2.ResumeLayout(False)
-        Me.FStatus2.PerformLayout()
-        Me.FStatus.ResumeLayout(False)
-        Me.FStatus.PerformLayout()
-        Me.ToolStripContainer1.ContentPanel.ResumeLayout(False)
-        Me.ToolStripContainer1.TopToolStripPanel.ResumeLayout(False)
-        Me.ToolStripContainer1.TopToolStripPanel.PerformLayout()
-        Me.ToolStripContainer1.ResumeLayout(False)
-        Me.ToolStripContainer1.PerformLayout()
-        Me.PMain.ResumeLayout(False)
-        Me.PMainR.ResumeLayout(False)
-        Me.PMainL.ResumeLayout(False)
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.cmnLanguage.ResumeLayout(false)
+        Me.cmnTheme.ResumeLayout(false)
+        Me.POptionsScroll.ResumeLayout(false)
+        Me.POptionsScroll.PerformLayout
+        Me.POptions.ResumeLayout(false)
+        Me.POptions.PerformLayout
+        Me.POExpansion.ResumeLayout(false)
+        Me.POExpansionInner.ResumeLayout(false)
+        Me.POExpansionInner.PerformLayout
+        Me.POBeat.ResumeLayout(false)
+        Me.POBeatInner.ResumeLayout(false)
+        Me.POBeatInner.PerformLayout
+        Me.TableLayoutPanel7.ResumeLayout(false)
+        Me.TableLayoutPanel7.PerformLayout
+        CType(Me.nBeatD,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.nBeatN,System.ComponentModel.ISupportInitialize).EndInit
+        Me.POBeatPart2.ResumeLayout(false)
+        Me.POBeatPart2.PerformLayout
+        Me.POWAV.ResumeLayout(false)
+        Me.POWAVInner.ResumeLayout(false)
+        Me.POWAVInner.PerformLayout
+        Me.FlowLayoutPanel3.ResumeLayout(false)
+        Me.POWAVPart2.ResumeLayout(false)
+        Me.POWAVPart2.PerformLayout
+        Me.POWaveForm.ResumeLayout(false)
+        Me.POWaveForm.PerformLayout
+        Me.POWaveFormInner.ResumeLayout(false)
+        Me.POWaveFormInner.PerformLayout
+        Me.POWaveFormPart2.ResumeLayout(false)
+        Me.POWaveFormPart2.PerformLayout
+        CType(Me.TWSaturation,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TWTransparency,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TWPrecision,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TWWidth,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TWLeft,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TWSaturation2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TWLeft2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TWTransparency2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TWWidth2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TWPrecision2,System.ComponentModel.ISupportInitialize).EndInit
+        Me.POWaveFormPart1.ResumeLayout(false)
+        Me.POWaveFormPart1.PerformLayout
+        Me.TableLayoutPanel1.ResumeLayout(false)
+        Me.TableLayoutPanel1.PerformLayout
+        Me.FlowLayoutPanel1.ResumeLayout(false)
+        Me.TableLayoutPanel6.ResumeLayout(false)
+        Me.TableLayoutPanel6.PerformLayout
+        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TWPosition2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TWPosition,System.ComponentModel.ISupportInitialize).EndInit
+        Me.POGrid.ResumeLayout(false)
+        Me.POGrid.PerformLayout
+        Me.POGridInner.ResumeLayout(false)
+        Me.POGridInner.PerformLayout
+        Me.POGridPart2.ResumeLayout(false)
+        Me.POGridPart2.PerformLayout
+        Me.TableLayoutPanel5.ResumeLayout(false)
+        Me.TableLayoutPanel5.PerformLayout
+        Me.FlowLayoutPanel2.ResumeLayout(false)
+        Me.TableLayoutPanel4.ResumeLayout(false)
+        Me.TableLayoutPanel4.PerformLayout
+        CType(Me.CGB,System.ComponentModel.ISupportInitialize).EndInit
+        Me.POGridPart1.ResumeLayout(false)
+        Me.POGridPart1.PerformLayout
+        Me.TableLayoutPanel3.ResumeLayout(false)
+        Me.TableLayoutPanel3.PerformLayout
+        CType(Me.PictureBox9,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.CGHeight2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.CGHeight,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox10,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.CGWidth2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.CGWidth,System.ComponentModel.ISupportInitialize).EndInit
+        Me.TableLayoutPanel2.ResumeLayout(false)
+        Me.TableLayoutPanel2.PerformLayout
+        CType(Me.PictureBox7,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.CGDivide,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.CGSub,System.ComponentModel.ISupportInitialize).EndInit
+        Me.POHeader.ResumeLayout(false)
+        Me.POHeader.PerformLayout
+        Me.POHeaderInner.ResumeLayout(false)
+        Me.POHeaderInner.PerformLayout
+        Me.POHeaderPart2.ResumeLayout(false)
+        Me.POHeaderPart2.PerformLayout
+        Me.POHeaderPart1.ResumeLayout(false)
+        Me.POHeaderPart1.PerformLayout
+        CType(Me.THBPM,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Menu1.ResumeLayout(false)
+        Me.mnMain.ResumeLayout(false)
+        Me.mnMain.PerformLayout
+        Me.cmnConversion.ResumeLayout(false)
+        Me.TBMain.ResumeLayout(false)
+        Me.TBMain.PerformLayout
+        Me.pStatus.ResumeLayout(false)
+        Me.pStatus.PerformLayout
+        Me.FStatus2.ResumeLayout(false)
+        Me.FStatus2.PerformLayout
+        Me.FStatus.ResumeLayout(false)
+        Me.FStatus.PerformLayout
+        Me.ToolStripContainer1.ContentPanel.ResumeLayout(false)
+        Me.ToolStripContainer1.TopToolStripPanel.ResumeLayout(false)
+        Me.ToolStripContainer1.TopToolStripPanel.PerformLayout
+        Me.ToolStripContainer1.ResumeLayout(false)
+        Me.ToolStripContainer1.PerformLayout
+        Me.PMain.ResumeLayout(false)
+        Me.PMainR.ResumeLayout(false)
+        Me.PMainL.ResumeLayout(false)
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents POptionsScroll As System.Windows.Forms.Panel
     Friend WithEvents LWAV As System.Windows.Forms.ListBox
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
@@ -4192,7 +4184,6 @@ Partial Class MainWindow
     Friend WithEvents mnConversion As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnErrorCheck As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnPreviewOnClick As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents mnShowFileName As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator20 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents mnGOptions As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnVOptions As System.Windows.Forms.ToolStripMenuItem

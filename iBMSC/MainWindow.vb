@@ -59,7 +59,7 @@ Public Class MainWindow
     Dim DispLang As String = ""     'Display Language
     Dim Recent() As String = {"", "", "", "", ""}
     Dim NTInput As Boolean = True
-    Dim ShowFileName As Boolean = False
+    Dim ShowFileName As Boolean = True
 
     Dim BeepWhileSaved As Boolean = True
     Dim BPMx1296 As Boolean = False
@@ -1904,7 +1904,7 @@ EndSearch:
     '    TBPreviewErrorCheck.Image = IIf(PreviewErrorCheck, My.Resources.x16PreviewCheck, My.Resources.x16PreviewCheckN)
     'End Sub
 
-    Private Sub TBShowFileName_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TBShowFileName.Click, mnShowFileName.Click
+    Private Sub TBShowFileName_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TBShowFileName.Click
         ShowFileName = sender.Checked
         TBShowFileName.Checked = ShowFileName
         mnShowFileName.Checked = ShowFileName
