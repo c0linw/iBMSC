@@ -7,16 +7,18 @@ See README.md.old for original iBMSC README file.
 =====
 * TODO:
   * Set note color based on known Bandori note labels
-      * PROGRESS: 
-          * Added code to change color of notes. Works for regular notes, flicks, sliderends, and skill notes
-          * Dumb off by 1 error for slide note colouring. Will fix soon. 
+      * PROGRESS: initial implementation completed
+          * Added code to change color of notes. Works for regular notes, slides, flicks, sliderends, and skill notes
+          * "Dangling" sliders are now colored red as a warning. This happens when a slider note cannot find a corresponding sliderend after it.
+				* "Dangling" sliderends should also be colored red. Placeholder code for now so all sliderends are colored red.
+		  * Fever activation notes not accounted for yet. Simply forgot to add them in my checks, easy fix later
   * Render lines between slide notes for easier visualization
       * PROGRESS:
-          * Logic behind it looks good, but I need to learn how to draw stuff that isn't a rectangle lol
+          * Poggers we got sliderbodies boi
           * Still need to figure out how to split a single note LN into head, body, and tail
           * Coloring skill activation LNs is gonna be kinda fucky but I think I can make it work.
   * Create blank file with WAV labels preset for Bandori charts
-  * Keyboard shortcuts to change between Bandori note types
+	  * The more I test, the more I realize how badly I need this feature
   
 * I don't even know how to use the BMS previewers myself, so I'll figure that out later. Would be cool to create a custom previewer using Burrito's code for bandorichart.
 

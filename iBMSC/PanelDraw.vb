@@ -601,10 +601,35 @@ Partial Public Class MainWindow
     End Sub
 
     Private Sub DrawSlider(ByVal sNote As Note, ByVal nextSlide As Note, ByVal e As BufferedGraphics, ByVal xHS As Long, ByVal xVS As Long, ByVal xHeight As Integer)
-        ' TODO: Add case for "slide" labels and draw lines connecting slider notes
-        '   -Check if slide note is followed by another slide note or slider end
-        '       - If so, draw lines from slide note's upper corners to next slide note/slide end's lower corners
-        '       - Otherwise, color note Color.Red to warn the user that slide is incomplete
+        ' Get upper 2 corners of sNote and lower 2 corners of nextSlide
+        ' Draw polygon using those 4 points. 
+
+        Dim xPen1 As Pen
+        Dim xBrush As SolidBrush
+        Dim xBrush2 As SolidBrush
+        Dim xAlpha As Single
+
+        Dim pts(3) As Point
+        pts(0) = New Point(HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex), xHS),
+                           NoteRowToPanelHeight(sNote.VPosition, xVS, xHeight) - vo.kHeight/2)
+
+        pts(1) = New Point(HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex) + GetColumnWidth(sNote.ColumnIndex), xHS),
+                           NoteRowToPanelHeight(sNote.VPosition, xVS, xHeight) - vo.kHeight/2)
+
+        pts(2) = New Point(HorizontalPositiontoDisplay(nLeft(nextSlide.ColumnIndex) + GetColumnWidth(nextSlide.ColumnIndex), xHS),
+                           NoteRowToPanelHeight(nextSlide.VPosition, xVS, xHeight) - vo.kHeight/2)
+
+        pts(3) = New Point(HorizontalPositiontoDisplay(nLeft(nextSlide.ColumnIndex), xHS),
+                           NoteRowToPanelHeight(nextSlide.VPosition, xVS, xHeight) - vo.kHeight/2)
+
+        xPen1 = New Pen(Color.LimeGreen)
+        xBrush = New SolidBrush(Color.ForestGreen)
+
+        ' Sliderbody fill
+        e.Graphics.FillPolygon(xBrush, pts)
+
+        'e.Graphics.DrawPolygon(xPen1, pts)
+        
     End Sub
 
     Private Sub DrawPairedLNBody(sNote As Note, e As BufferedGraphics, xHS As Long, xVS As Long, xHeight As Integer, xAlpha As Single)
@@ -648,20 +673,6 @@ Partial Public Class MainWindow
         Dim p2 As Point
         Dim bright As Color
         Dim dark As Color
-        Dim blue, green, darkgreen, yellow, pink As Color
-
-        blue = Color.LightBlue
-        green = Color.Lime
-        darkgreen = Color.ForestGreen
-        yellow = Color.Yellow
-        pink = Color.Magenta
-
-        ' TODO: Split into cases for known Bandori note types, and a default case (bd).
-        '   - Slide node (need to implement DrawSlider)
-        '   - Slide end (calls helper with green colour)
-        '   - Flick/Slide end flick (calls helper with pink colour)
-        '   - Skill (calls helper with yellow colour)
-        '   - bd/default (calls helper with blue colour)
 
         If sNote.Length = 0 Then
             p1 = New Point(HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex), xHS),
@@ -679,19 +690,10 @@ Partial Public Class MainWindow
             End If
 
             xBrush2 = New SolidBrush(GetColumn(sNote.ColumnIndex).cText)
-        Else
-            p1 = New Point(HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex) - 0.5 * GetColumnWidth(sNote.ColumnIndex), xHS),
-                           NoteRowToPanelHeight(sNote.VPosition + sNote.Length, xVS, xHeight) - vo.kHeight)
-            p2 = New Point(HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex) + 1.5 * GetColumnWidth(sNote.ColumnIndex), xHS),
-                                      NoteRowToPanelHeight(sNote.VPosition, xVS, xHeight))
 
-            bright = GetColumn(sNote.ColumnIndex).getLongBright(xAlpha)
-            dark = GetColumn(sNote.ColumnIndex).getLongDark(xAlpha)
+            
 
-            xBrush2 = New SolidBrush(GetColumn(sNote.ColumnIndex).cLText)
-        End If
-
-        ' Draw sliderbodies between slide note and next slide note
+        ' SLIDER CHECKS FOR NEXT SLIDEREND NOTE
         If xLabel = "slide_a" OrElse xLabel = "slide_b" Then
             ' check whether slide end exists after it
             If getNextSlide(sNote, xLabel) = -1 Then
@@ -714,14 +716,54 @@ Partial Public Class MainWindow
             renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
         End If
 
+
+        ' SLIDER END CHECKS FOR PREVIOUS SLIDER NOTE
+        If xLabel = "slide_end_flick_a" OrElse xLabel = "slide_end_flick_b" OrElse xLabel = "slide_end_a" OrElse xLabel = "slide_end_b" Then
+            ' check whether slide end exists after it
+            If getNextSlide(sNote, xLabel) = -1 Then
+                bright = Color.Red
+                dark = Color.Red
+                renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
+            Else
+                bright = getCustomColor(getNoteColor(xLabel), xAlpha)
+                dark = getCustomColor(getNoteColor(xLabel), xAlpha)
+                renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
+                ' Get next slide note
+                Dim nextSlide As Note
+                nextSlide = Notes(getNextSlide(sNote, xLabel))
+                DrawSlider(sNote, nextSlide, e, xHS, xVS, xHeight)
+            End If
+            ' Check previous slide note and draw if offscreen
+        Else ' TODO: draw long notes as start/end notes of Color.Lime and a slider body of Color.ForestGreen
+            bright = getCustomColor(getNoteColor(xLabel), xAlpha)
+            dark = getCustomColor(getNoteColor(xLabel), xAlpha)
+            renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
+        End If
+
         ' Offscreen slider fix
-        If xLabel = "slide_a" OrElse xLabel = "slide_b" OrElse xLabel = "slide_end_flick_a" OrElse xLabel = "slide_end_flick_b" OrElse xLabel = "slide_end_a" OrElse xLabel = "slide_end_a" Then
+        If xLabel = "slide_a" OrElse xLabel = "slide_b" OrElse xLabel = "slide_end_flick_a" OrElse xLabel = "slide_end_flick_b" OrElse xLabel = "slide_end_a" OrElse xLabel = "slide_end_b" Then
             ' decrementing loop starting from note ID to get previous slide_a or slide_b note
             ' Exit if no note or slide end note is found first
             ' If previous slide note is found, check if offscreen
             ' It is? Great, render it's body.
             ' Use line slope and (distance to screen bottom / distance between notes) to calculate x positions to start from bottom of the screen
             ' draw sliderbody lines between given points.
+        End If
+
+        Else ' TODO: DETECT BANDORI NOTES AND RENDER BASED ON COLOR
+                ' Render everything that isn't a bd/skill/flick as RED because it doesn't work in bandori
+                ' 
+            p1 = New Point(HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex) - 0.5 * GetColumnWidth(sNote.ColumnIndex), xHS),
+                           NoteRowToPanelHeight(sNote.VPosition + sNote.Length, xVS, xHeight) - vo.kHeight)
+            p2 = New Point(HorizontalPositiontoDisplay(nLeft(sNote.ColumnIndex) + 1.5 * GetColumnWidth(sNote.ColumnIndex), xHS),
+                                      NoteRowToPanelHeight(sNote.VPosition, xVS, xHeight))
+
+            bright = GetColumn(sNote.ColumnIndex).getLongBright(xAlpha)
+            dark = GetColumn(sNote.ColumnIndex).getLongDark(xAlpha)
+
+            xBrush2 = New SolidBrush(GetColumn(sNote.ColumnIndex).cLText)
+
+            renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
         End If
 
         'e.Graphics.DrawString(sNote.TimeOffset.ToString("0.##"), New Font("Verdana", 9), Brushes.Cyan, _
