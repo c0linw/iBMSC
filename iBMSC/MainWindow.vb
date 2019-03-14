@@ -1904,7 +1904,7 @@ EndSearch:
     '    TBPreviewErrorCheck.Image = IIf(PreviewErrorCheck, My.Resources.x16PreviewCheck, My.Resources.x16PreviewCheckN)
     'End Sub
 
-    Private Sub TBShowFileName_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TBShowFileName.Click
+    Private Sub TBShowFileName_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TBShowFileName.Click, mnShowFileName.Click
         ShowFileName = sender.Checked
         TBShowFileName.Checked = ShowFileName
         mnShowFileName.Checked = ShowFileName

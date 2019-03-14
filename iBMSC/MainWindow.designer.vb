@@ -355,6 +355,7 @@ Partial Class MainWindow
         Me.HSL = New System.Windows.Forms.HScrollBar()
         Me.POptionsResizer = New System.Windows.Forms.Button()
         Me.ToolTipUniversal = New System.Windows.Forms.ToolTip(Me.components)
+        Me.mnShowFileName = New System.Windows.Forms.ToolStripMenuItem()
         Me.cmnLanguage.SuspendLayout
         Me.cmnTheme.SuspendLayout
         Me.POptionsScroll.SuspendLayout
@@ -2975,7 +2976,7 @@ Partial Class MainWindow
         '
         'mnOptions
         '
-        Me.mnOptions.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnNTInput, Me.mnErrorCheck, Me.mnPreviewOnClick, Me.ToolStripSeparator20, Me.mnGOptions, Me.mnVOptions, Me.mnPOptions, Me.mnLanguage, Me.mnTheme})
+        Me.mnOptions.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnNTInput, Me.mnErrorCheck, Me.mnPreviewOnClick, Me.mnShowFileName, Me.ToolStripSeparator20, Me.mnGOptions, Me.mnVOptions, Me.mnPOptions, Me.mnLanguage, Me.mnTheme})
         Me.mnOptions.Name = "mnOptions"
         Me.mnOptions.Size = New System.Drawing.Size(61, 19)
         Me.mnOptions.Text = "&Options"
@@ -4003,6 +4004,16 @@ Partial Class MainWindow
         Me.POptionsResizer.TabStop = false
         Me.POptionsResizer.UseVisualStyleBackColor = true
         '
+        'mnShowFileName
+        '
+        Me.mnShowFileName.Checked = true
+        Me.mnShowFileName.CheckOnClick = true
+        Me.mnShowFileName.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.mnShowFileName.Image = Global.iBMSC.My.Resources.Resources.x16ShowFileNameN
+        Me.mnShowFileName.Name = "mnShowFileName"
+        Me.mnShowFileName.Size = New System.Drawing.Size(229, 22)
+        Me.mnShowFileName.Text = "Show &File Name on Notes"
+        '
         'MainWindow
         '
         Me.AllowDrop = true
@@ -4467,4 +4478,5 @@ End Sub
     Friend WithEvents TBWavIncrease As ToolStripButton
     Friend WithEvents TimeStatusLabel As ToolStripStatusLabel
     Friend WithEvents BConvertStop As ToolStripButton
+    Friend WithEvents mnShowFileName As ToolStripMenuItem
 End Class

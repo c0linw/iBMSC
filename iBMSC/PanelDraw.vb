@@ -750,6 +750,7 @@ Partial Public Class MainWindow
         If slideType = "slide_a" Then
             For currIndex = Array.IndexOf(Notes, sNote) To UBound(Notes)
                 currLabel = C10to36(Notes(currIndex).Value \ 10000)
+                If hWAV(C36to10(currLabel)) <> "" Then currLabel = Path.GetFileNameWithoutExtension(hWAV(C36to10(currLabel)))
                 If currLabel = "slide_a" OrElse currLabel = "slide_end_a" OrElse currLabel = "slide_end_flick_a" Then
                     Return currIndex
                 End If
@@ -757,6 +758,7 @@ Partial Public Class MainWindow
         ElseIf slideType = "slide_b" Then
             For currIndex = Array.IndexOf(Notes, sNote) To UBound(Notes)
                 currLabel = C10to36(Notes(currIndex).Value \ 10000)
+                If hWAV(C36to10(currLabel)) <> "" Then currLabel = Path.GetFileNameWithoutExtension(hWAV(C36to10(currLabel)))
                 If currLabel = "slide_b" OrElse currLabel = "slide_end_b" OrElse currLabel = "slide_end_flick_b" Then
                     Return currIndex
                 End If
