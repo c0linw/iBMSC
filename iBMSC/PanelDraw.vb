@@ -748,7 +748,10 @@ Partial Public Class MainWindow
         Dim currLabel As String
 
         If slideType = "slide_a" Then
-            For currIndex = Array.IndexOf(Notes, sNote) To UBound(Notes)
+            ' slide as last note is dangling slider by default
+            If Array.IndexOf(Notes, sNote) = UBound(Notes) Then Return -1
+            ' previous condition allows to start from index + 1
+            For currIndex = Array.IndexOf(Notes, sNote) + 1 To UBound(Notes)
                 currLabel = C10to36(Notes(currIndex).Value \ 10000)
                 If hWAV(C36to10(currLabel)) <> "" Then currLabel = Path.GetFileNameWithoutExtension(hWAV(C36to10(currLabel)))
                 If currLabel = "slide_a" OrElse currLabel = "slide_end_a" OrElse currLabel = "slide_end_flick_a" Then
@@ -756,7 +759,10 @@ Partial Public Class MainWindow
                 End If
             Next
         ElseIf slideType = "slide_b" Then
-            For currIndex = Array.IndexOf(Notes, sNote) To UBound(Notes)
+            ' ditto, default condition
+            If Array.IndexOf(Notes, sNote) = UBound(Notes) Then Return -1
+            ' previous condition allows us to start from index + 1
+            For currIndex = Array.IndexOf(Notes, sNote) + 1 To UBound(Notes)
                 currLabel = C10to36(Notes(currIndex).Value \ 10000)
                 If hWAV(C36to10(currLabel)) <> "" Then currLabel = Path.GetFileNameWithoutExtension(hWAV(C36to10(currLabel)))
                 If currLabel = "slide_b" OrElse currLabel = "slide_end_b" OrElse currLabel = "slide_end_flick_b" Then
