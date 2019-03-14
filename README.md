@@ -9,7 +9,7 @@ See README.md.old for original iBMSC README file.
   * Set note color based on known Bandori note labels
       * PROGRESS: 
           * Added code to change color of notes. Works for regular notes, flicks, sliderends, and skill notes
-          * Wanted to mark "dangling" slider notes red. Not working properly right now as all slide notes are being colored red.
+          * Dumb off by 1 error for slide note colouring. Will fix soon. 
   * Render lines between slide notes for easier visualization
       * PROGRESS:
           * Logic behind it looks good, but I need to learn how to draw stuff that isn't a rectangle lol
