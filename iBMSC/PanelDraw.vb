@@ -601,20 +601,23 @@ Partial Public Class MainWindow
             ' draw sliderbody lines between given points.
         End If
 
-        ' "bd" notes must be colored green if they are part of a long note
-        If xLabel = "bd" And sNote.LNPair <> 0 Then
-            bright = getNoteColor(xLabel)
-            dark = getNoteColor(xLabel)
-            renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
-        End If
-
         Else
-            bright = getNoteColor(xLabel)
-            dark = getNoteColor(xLabel)
-
             xBrush2 = New SolidBrush(GetColumn(sNote.ColumnIndex).cLText)
+            ' "bd" notes must be colored green if they are part of a long note
+            If xLabel = "bd" And sNote.LongNote Then
+                Console.WriteLine("bd LN check achieved")
+                bright = Color.FromArgb(255, 48, 199, 48)
+                dark = Color.FromArgb(255, 48, 199, 48)
 
-            renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
+                renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
+                Else 
+                    bright = getNoteColor(xLabel)
+                    dark = getNoteColor(xLabel)
+                
+
+                    renderNote(sNote, xLabel, xHS, xVS, xHeight, xAlpha, bright, p1, p2, dark, e, xBrush2)
+            End If
+
         End If
 
     End Sub
@@ -669,6 +672,7 @@ Partial Public Class MainWindow
     End Sub
     
     Private Sub DrawBandoriLNBody(sNote As Note, e As BufferedGraphics, xHS As Long, xVS As Long, xHeight As Integer, xAlpha As Single)
+        Console.WriteLine("Reached LN draw function")
         Dim SliderBodyColor As Color
         SliderBodyColor = Color.FromArgb(200, 0, 115, 0)
 
@@ -908,10 +912,9 @@ Partial Public Class MainWindow
 
         ' Draw paired body
         If sNote.ColumnIndex < niB Then
-            If sNote.Length = 0 And sNote.LNPair <> 0 Then
+            If sNote.LNPair <> 0 
+                Console.WriteLine("LN check in renderNote")
                 DrawBandoriLNBody(sNote, e, xHS, xVS, xHeight, xAlpha)
-                bright = Color.FromArgb(255, 48, 199, 48)
-                dark = Color.FromArgb(255, 48, 199, 48)
             End If
         End If
 
